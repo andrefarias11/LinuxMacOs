@@ -1,0 +1,15 @@
+@import 'colors.css';
+/* macOS window buttons */
+headerbar button.titlebutton.close, .titlebar button.titlebutton.close { background-image: none; background-color: #ff5f57; color: transparent; border: 1px solid alpha(black, 0.18); border-radius: 999px; min-width: 8px; min-height: 8px; padding: 0; margin: 0 2px; box-shadow: none; -gtk-icon-shadow: none; }
+headerbar button.titlebutton.close image, .titlebar button.titlebutton.close image { opacity: 0; }
+headerbar button.titlebutton.minimize, .titlebar button.titlebutton.minimize { background-image: none; background-color: #febc2e; color: transparent; border: 1px solid alpha(black, 0.18); border-radius: 999px; min-width: 8px; min-height: 8px; padding: 0; margin: 0 2px; box-shadow: none; -gtk-icon-shadow: none; }
+headerbar button.titlebutton.minimize image, .titlebar button.titlebutton.minimize image { opacity: 0; }
+headerbar button.titlebutton.maximize, .titlebar button.titlebutton.maximize { background-image: none; background-color: #28c840; color: transparent; border: 1px solid alpha(black, 0.18); border-radius: 999px; min-width: 8px; min-height: 8px; padding: 0; margin: 0 2px; box-shadow: none; -gtk-icon-shadow: none; }
+headerbar button.titlebutton.maximize image, .titlebar button.titlebutton.maximize image { opacity: 0; }
+/* Unified dark menus and dialogs */
+menu, .menu { background-color: #24262d; color: #f5f5f7; border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 6px; }
+menu menuitem { padding: 6px 10px; border-radius: 6px; }
+menu menuitem:hover { background-color: #0a84ff; color: white; }
+window.dialog.background, messagedialog.background { background-color: #202127; color: #f5f5f7; }
+.dialog-action-area button { border-radius: 8px; padding: 6px 14px; }
+filechooser { background-color: #202127; color: #f5f5f7; }

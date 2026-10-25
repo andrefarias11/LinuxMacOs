@@ -1,0 +1,2 @@
+/* Preserve right-side window controls. */
+.titlebar-buttonbox-container { -moz-box-ordinal-group: 100 !important; order: 100 !important; }

@@ -1,0 +1,14 @@
+@import "WhiteSur/colors/light.css";
+@import "WhiteSur/colors/dark.css";
+
+@import "WhiteSur/pages/common.css";
+@import "WhiteSur/pages/newtab.css";
+@import "WhiteSur/pages/reader.css";
+@import "WhiteSur/pages/privatebrowsing.css";
+
+@-moz-document url("about:newtab"), url("about:home") {
+ body { background: #17181c !important; color: #f5f5f7 !important; }
+ .search-wrapper .logo-and-wordmark { display: none !important; }
+ .search-wrapper { padding-top: 24px !important; }
+ .top-site-outer .tile { background-color: #24252b !important; border-radius: 14px !important; }
+}

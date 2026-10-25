@@ -1,0 +1,3 @@
+if background_color 16,17,20; then
+  clear
+fi

@@ -1,0 +1,2 @@
+#!/bin/sh
+exec gnome-text-editor @@HOME@@/Documents/Notas/Notas-rapidas.md

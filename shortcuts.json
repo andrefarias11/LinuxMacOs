@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Notas rápidas",
+    "binding": "<Super><Shift>n",
+    "command": "@@HOME@@/.local/bin/notas-rapidas"
+  },
+  {
+    "name": "Alternar modo de foco",
+    "binding": "<Super><Shift>f",
+    "command": "@@HOME@@/.local/bin/alternar-foco"
+  },
+  {
+    "name": "Spotlight",
+    "binding": "<Super>space",
+    "command": "@@HOME@@/.local/bin/spotlight"
+  }
+]

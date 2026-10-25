@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Alternar modo de foco
+Exec=@@HOME@@/.local/bin/alternar-foco
+Icon=notifications-disabled-symbolic
+Terminal=false
+Categories=Utility;

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Busca Spotlight
+Comment=Busca flutuante de aplicativos, arquivos e janelas
+Exec=@@HOME@@/.local/bin/spotlight
+Icon=system-search
+Terminal=false
+Categories=Utility;

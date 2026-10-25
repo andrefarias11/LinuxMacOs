@@ -1,0 +1,10 @@
+#panel { height: 28px; font-family: Inter, sans-serif; font-size: 10pt; background-color: rgba(20,21,25,0.80); }
+#panel .panel-button { -natural-hpadding: 6px; -minimum-hpadding: 4px; border-radius: 6px; }
+#panel .panel-status-indicators-box { spacing: 4px; }
+#panel .system-status-icon { icon-size: 15px; padding: 0 2px; }
+#panel .clock-display .clock { font-size: 10pt; font-weight: 500; padding: 0 8px; }
+.mac-panel-apple { padding: 0 3px; }
+.mac-panel-app-name { font-size: 10pt; font-weight: 600; max-width: 210px; }
+
+.mac-system-menu .popup-menu-item { padding: 7px 13px; font-size: 10pt; border-radius: 7px; }
+.mac-system-menu .popup-menu-content { padding: 6px; }

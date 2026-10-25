@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+import subprocess
+schema='org.gnome.desktop.notifications'
+current=subprocess.check_output(['gsettings','get',schema,'show-banners'],text=True).strip()
+focus=current=='true'
+subprocess.run(['gsettings','set',schema,'show-banners','false' if focus else 'true'],check=True)
+message='Foco ativado: avisos ficam na central.' if focus else 'Modo normal: banners de notificações ativados.'
+subprocess.run(['notify-send','-a','Modo de foco','Modo de foco',message])
+print(message)

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Downloads
+Comment=Abrir a pasta Downloads
+Exec=nautilus @@HOME@@/Downloads
+Icon=folder-download
+Terminal=false
+Categories=Utility;FileManager;
+StartupNotify=true

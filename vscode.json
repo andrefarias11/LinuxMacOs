@@ -1,0 +1,7 @@
+{
+  "window.titleBarStyle": "custom",
+  "editor.fontFamily": "'JetBrains Mono', monospace",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 13,
+  "workbench.colorTheme": "Dark Modern"
+}

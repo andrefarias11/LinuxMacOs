@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Notas rápidas
+Exec=@@HOME@@/.local/bin/notas-rapidas
+Icon=org.gnome.TextEditor
+Categories=Utility;TextEditor;
+Terminal=false

@@ -1,0 +1,2 @@
+#!/bin/sh
+exec rofi -config @@HOME@@/.config/rofi/spotlight.rasi -show drun -p '⌕'

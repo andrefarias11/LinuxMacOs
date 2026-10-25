@@ -1,0 +1,2492 @@
+[
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "avatar-directories",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "can-change-accels",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "clock-format",
+    "value": "'24h'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "clock-show-date",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "clock-show-seconds",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "clock-show-weekday",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "color-scheme",
+    "value": "'prefer-dark'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "cursor-blink",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "cursor-blink-time",
+    "value": "1200"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "cursor-blink-timeout",
+    "value": "10"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "cursor-size",
+    "value": "24"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "cursor-theme",
+    "value": "'WhiteSur-cursors'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "document-font-name",
+    "value": "'Inter 11'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "enable-animations",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "enable-hot-corners",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "font-antialiasing",
+    "value": "'rgba'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "font-hinting",
+    "value": "'slight'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "font-name",
+    "value": "'Inter 11'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "font-rgba-order",
+    "value": "'rgb'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "gtk-color-palette",
+    "value": "'black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "gtk-color-scheme",
+    "value": "''"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "gtk-enable-primary-paste",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "gtk-im-module",
+    "value": "''"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "gtk-im-preedit-style",
+    "value": "'callback'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "gtk-im-status-style",
+    "value": "'callback'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "gtk-key-theme",
+    "value": "'Default'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "gtk-theme",
+    "value": "'WhiteSur-Dark'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "gtk-timeout-initial",
+    "value": "200"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "gtk-timeout-repeat",
+    "value": "20"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "icon-theme",
+    "value": "'WhiteSur-dark'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "locate-pointer",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "menubar-accel",
+    "value": "'F10'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "menubar-detachable",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "menus-have-tearoff",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "monospace-font-name",
+    "value": "'JetBrains Mono 11'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "overlay-scrolling",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "scaling-factor",
+    "value": "uint32 1"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "show-battery-percentage",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "text-scaling-factor",
+    "value": "1.0"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "toolbar-detachable",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "toolbar-icons-size",
+    "value": "'large'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "toolbar-style",
+    "value": "'text'"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "toolkit-accessibility",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.desktop.interface",
+    "key": "zorin-display-overview-on-startup",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "action-double-click-titlebar",
+    "value": "'toggle-maximize'"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "action-middle-click-titlebar",
+    "value": "'none'"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "action-right-click-titlebar",
+    "value": "'menu'"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "audible-bell",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "auto-raise",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "auto-raise-delay",
+    "value": "500"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "button-layout",
+    "value": "':minimize,maximize,close'"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "disable-workarounds",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "focus-mode",
+    "value": "'click'"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "focus-new-windows",
+    "value": "'smart'"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "mouse-button-modifier",
+    "value": "'<Super>'"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "num-workspaces",
+    "value": "3"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "raise-on-click",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "resize-with-right-button",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "theme",
+    "value": "'WhiteSur-Dark'"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "titlebar-font",
+    "value": "'Inter Bold 11'"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "titlebar-uses-system-font",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "visual-bell",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "visual-bell-type",
+    "value": "'fullscreen-flash'"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.preferences",
+    "key": "workspace-names",
+    "value": "['Desenvolvimento', 'Pesquisa', 'Comunicação']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "activate-window-menu",
+    "value": "['<Alt>space']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "always-on-top",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "begin-move",
+    "value": "['<Alt>F7']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "begin-resize",
+    "value": "['<Alt>F8']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "close",
+    "value": "['<Super>q', '<Alt>F4']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "cycle-group",
+    "value": "['<Alt>F6']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "cycle-group-backward",
+    "value": "['<Shift><Alt>F6']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "cycle-panels",
+    "value": "['<Control><Alt>Escape']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "cycle-panels-backward",
+    "value": "['<Shift><Control><Alt>Escape']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "cycle-windows",
+    "value": "['<Alt>Escape']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "cycle-windows-backward",
+    "value": "['<Shift><Alt>Escape']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "lower",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "maximize",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "maximize-horizontally",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "maximize-vertically",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "minimize",
+    "value": "['<Super>comma']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-center",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-corner-ne",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-corner-nw",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-corner-se",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-corner-sw",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-side-e",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-side-n",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-side-s",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-side-w",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-1",
+    "value": "['<Control><Alt><Shift>1']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-10",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-11",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-12",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-2",
+    "value": "['<Control><Alt><Shift>2']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-3",
+    "value": "['<Control><Alt><Shift>3']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-4",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-5",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-6",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-7",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-8",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-9",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-down",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-last",
+    "value": "['<Super><Shift>End']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-left",
+    "value": "['<Super><Shift>Page_Up', '<Super><Shift><Alt>Left', '<Control><Shift><Alt>Left']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-right",
+    "value": "['<Super><Shift>Page_Down', '<Super><Shift><Alt>Right', '<Control><Shift><Alt>Right']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "move-to-workspace-up",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "panel-main-menu",
+    "value": "['<Alt>F1']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "panel-run-dialog",
+    "value": "['<Alt>F2']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "raise",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "raise-or-lower",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "set-spew-mark",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "show-desktop",
+    "value": "['<Primary><Super>d', '<Primary><Alt>d', '<Super>d']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-applications",
+    "value": "['<Super>Tab']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-applications-backward",
+    "value": "['<Shift><Super>Tab']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-group",
+    "value": "['<Super>Above_Tab', '<Alt>Above_Tab']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-group-backward",
+    "value": "['<Shift><Super>Above_Tab', '<Shift><Alt>Above_Tab']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-input-source",
+    "value": "['<Super>period', 'XF86Keyboard']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-input-source-backward",
+    "value": "['<Shift><Super>period', '<Shift>XF86Keyboard']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-panels",
+    "value": "['<Control><Alt>Tab']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-panels-backward",
+    "value": "['<Shift><Control><Alt>Tab']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-1",
+    "value": "['<Control><Alt>1']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-10",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-11",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-12",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-2",
+    "value": "['<Control><Alt>2']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-3",
+    "value": "['<Control><Alt>3']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-4",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-5",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-6",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-7",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-8",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-9",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-down",
+    "value": "['<Primary><Super>Down', '<Primary><Super>j']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-last",
+    "value": "['<Super>End']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-left",
+    "value": "['<Control><Alt>Left']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-right",
+    "value": "['<Control><Alt>Right']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-to-workspace-up",
+    "value": "['<Primary><Super>Up', '<Primary><Super>k']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-windows",
+    "value": "['<Alt>Tab']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "switch-windows-backward",
+    "value": "['<Shift><Alt>Tab']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "toggle-above",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "toggle-fullscreen",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "toggle-maximized",
+    "value": "['<Super>m']"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "toggle-on-all-workspaces",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.desktop.wm.keybindings",
+    "key": "unmaximize",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.mutter",
+    "key": "attach-modal-dialogs",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.mutter",
+    "key": "auto-maximize",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.mutter",
+    "key": "center-new-windows",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.mutter",
+    "key": "check-alive-timeout",
+    "value": "uint32 5000"
+  },
+  {
+    "schema": "org.gnome.mutter",
+    "key": "draggable-border-width",
+    "value": "10"
+  },
+  {
+    "schema": "org.gnome.mutter",
+    "key": "dynamic-workspaces",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.mutter",
+    "key": "edge-tiling",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.mutter",
+    "key": "experimental-features",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.mutter",
+    "key": "focus-change-on-pointer-rest",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.mutter",
+    "key": "locate-pointer-key",
+    "value": "'Control_L'"
+  },
+  {
+    "schema": "org.gnome.mutter",
+    "key": "overlay-key",
+    "value": "'Super_L'"
+  },
+  {
+    "schema": "org.gnome.mutter",
+    "key": "workspaces-only-on-primary",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "always-use-location-entry",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "click-policy",
+    "value": "'double'"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "date-time-format",
+    "value": "'simple'"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "default-folder-viewer",
+    "value": "'list-view'"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "default-sort-in-reverse-order",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "default-sort-order",
+    "value": "'name'"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "fts-enabled",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "install-mime-activation",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "migrated-gtk-settings",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "mouse-back-button",
+    "value": "uint32 8"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "mouse-forward-button",
+    "value": "uint32 9"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "mouse-use-extra-buttons",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "open-folder-on-dnd-hover",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "recursive-search",
+    "value": "'local-only'"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "search-filter-time-type",
+    "value": "'last_modified'"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "show-create-link",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "show-delete-permanently",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "show-directory-item-counts",
+    "value": "'local-only'"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "show-hidden-files",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "show-image-thumbnails",
+    "value": "'local-only'"
+  },
+  {
+    "schema": "org.gnome.nautilus.preferences",
+    "key": "thumbnail-limit",
+    "value": "uint64 50"
+  },
+  {
+    "schema": "org.gnome.nautilus.icon-view",
+    "key": "captions",
+    "value": "['none', 'none', 'none']"
+  },
+  {
+    "schema": "org.gnome.nautilus.icon-view",
+    "key": "default-zoom-level",
+    "value": "'medium'"
+  },
+  {
+    "schema": "org.gnome.nautilus.list-view",
+    "key": "default-column-order",
+    "value": "['name', 'date_modified', 'type', 'size', 'owner', 'group', 'permissions', 'mime_type', 'where', 'date_modified_with_time', 'date_accessed', 'date_created', 'recency', 'starred']"
+  },
+  {
+    "schema": "org.gnome.nautilus.list-view",
+    "key": "default-visible-columns",
+    "value": "['name', 'date_modified', 'type', 'size']"
+  },
+  {
+    "schema": "org.gnome.nautilus.list-view",
+    "key": "default-zoom-level",
+    "value": "'medium'"
+  },
+  {
+    "schema": "org.gnome.nautilus.list-view",
+    "key": "use-tree-view",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.user-theme",
+    "key": "name",
+    "value": "'WhiteSur-ControlCenter-Dark'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "activate-single-window",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "always-center-icons",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "animation-time",
+    "value": "0.16"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-ctrl-hotkey-1",
+    "value": "['<Ctrl><Super>1']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-ctrl-hotkey-10",
+    "value": "['<Ctrl><Super>0']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-ctrl-hotkey-2",
+    "value": "['<Ctrl><Super>2']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-ctrl-hotkey-3",
+    "value": "['<Ctrl><Super>3']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-ctrl-hotkey-4",
+    "value": "['<Ctrl><Super>4']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-ctrl-hotkey-5",
+    "value": "['<Ctrl><Super>5']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-ctrl-hotkey-6",
+    "value": "['<Ctrl><Super>6']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-ctrl-hotkey-7",
+    "value": "['<Ctrl><Super>7']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-ctrl-hotkey-8",
+    "value": "['<Ctrl><Super>8']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-ctrl-hotkey-9",
+    "value": "['<Ctrl><Super>9']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-hotkey-1",
+    "value": "['<Super>1']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-hotkey-10",
+    "value": "['<Super>0']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-hotkey-2",
+    "value": "['<Super>2']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-hotkey-3",
+    "value": "['<Super>3']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-hotkey-4",
+    "value": "['<Super>4']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-hotkey-5",
+    "value": "['<Super>5']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-hotkey-6",
+    "value": "['<Super>6']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-hotkey-7",
+    "value": "['<Super>7']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-hotkey-8",
+    "value": "['<Super>8']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-hotkey-9",
+    "value": "['<Super>9']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-shift-hotkey-1",
+    "value": "['<Shift><Super>1']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-shift-hotkey-10",
+    "value": "['<Shift><Super>0']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-shift-hotkey-2",
+    "value": "['<Shift><Super>2']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-shift-hotkey-3",
+    "value": "['<Shift><Super>3']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-shift-hotkey-4",
+    "value": "['<Shift><Super>4']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-shift-hotkey-5",
+    "value": "['<Shift><Super>5']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-shift-hotkey-6",
+    "value": "['<Shift><Super>6']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-shift-hotkey-7",
+    "value": "['<Shift><Super>7']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-shift-hotkey-8",
+    "value": "['<Shift><Super>8']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "app-shift-hotkey-9",
+    "value": "['<Shift><Super>9']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "apply-custom-theme",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "apply-glossy-effect",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "autohide",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "autohide-in-fullscreen",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "background-color",
+    "value": "'#ffffff'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "background-opacity",
+    "value": "0.28000000000000003"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "bolt-support",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "click-action",
+    "value": "'previews'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "custom-background-color",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "custom-theme-customize-running-dots",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "custom-theme-running-dots-border-color",
+    "value": "'#ffffff'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "custom-theme-running-dots-border-width",
+    "value": "0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "custom-theme-running-dots-color",
+    "value": "'#e8eaf2'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "custom-theme-shrink",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "customize-alphas",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "dance-urgent-applications",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "dash-max-icon-size",
+    "value": "36"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "default-windows-preview-to-open",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "disable-overview-on-startup",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "dock-fixed",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "dock-position",
+    "value": "'BOTTOM'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "extend-height",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "force-straight-corner",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "height-fraction",
+    "value": "0.90000000000000002"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "hide-delay",
+    "value": "0.29999999999999999"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "hide-tooltip",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "hot-keys",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "hotkeys-overlay",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "hotkeys-show-dock",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "icon-size-fixed",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "intellihide",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "intellihide-mode",
+    "value": "'FOCUS_APPLICATION_WINDOWS'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "isolate-locations",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "isolate-workspaces",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "manualhide",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "max-alpha",
+    "value": "0.80000000000000004"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "middle-click-action",
+    "value": "'launch'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "min-alpha",
+    "value": "0.20000000000000001"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "minimize-shift",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "pressure-threshold",
+    "value": "100.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "preview-size-scale",
+    "value": "0.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "require-pressure-to-show",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "running-indicator-dominant-color",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "running-indicator-style",
+    "value": "'DOTS'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "scroll-action",
+    "value": "'cycle-windows'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "scroll-switch-workspace",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "scroll-to-focused-application",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "shift-click-action",
+    "value": "'minimize'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "shift-middle-click-action",
+    "value": "'launch'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "shortcut",
+    "value": "['<Super>q']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "shortcut-text",
+    "value": "'<Super>q'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "shortcut-timeout",
+    "value": "2.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-apps-always-in-the-edge",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-apps-at-top",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-delay",
+    "value": "0.10000000000000001"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-dock-urgent-notify",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-favorites",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-icons-emblems",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-icons-notifications-counter",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-mounts",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-mounts-network",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-mounts-only-mounted",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-running",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-show-apps-button",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-trash",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "show-windows-preview",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "transparency-mode",
+    "value": "'FIXED'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "unity-backlit-items",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.dash-to-dock",
+    "key": "workspace-agnostic-urgent-windows",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell",
+    "key": "brightness",
+    "value": "0.59999999999999998"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell",
+    "key": "pipelines",
+    "value": "{'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'dual_kawase_blur'>, 'id': <'effect_000000000000'>, 'params': <{'unscaled_radius': <30>, 'brightness': <0.59999999999999998>}>}>]>}}"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell",
+    "key": "rounded-blur-notice-dismissed",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell",
+    "key": "settings-version",
+    "value": "7"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell",
+    "key": "sigma",
+    "value": "30"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.rounded-window-corners-reborn",
+    "key": "blacklist",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.rounded-window-corners-reborn",
+    "key": "border-width",
+    "value": "0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.rounded-window-corners-reborn",
+    "key": "custom-rounded-corner-settings",
+    "value": "@a{sv} {}"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.rounded-window-corners-reborn",
+    "key": "enable-preferences-entry",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.rounded-window-corners-reborn",
+    "key": "focused-shadow",
+    "value": "{'horizontalOffset': 0, 'verticalOffset': 4, 'blurOffset': 28, 'spreadRadius': 4, 'opacity': 60}"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.rounded-window-corners-reborn",
+    "key": "global-rounded-corner-settings",
+    "value": "{'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keepRoundedCorners': <{'maximized': <false>, 'fullscreen': <false>}>, 'borderRadius': <uint32 12>, 'smoothing': <0>, 'borderColor': <[0.5, 0.5, 0.5, 1.0]>, 'enabled': <true>}"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.rounded-window-corners-reborn",
+    "key": "settings-version",
+    "value": "uint32 7"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.rounded-window-corners-reborn",
+    "key": "skip-libadwaita-app",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.rounded-window-corners-reborn",
+    "key": "skip-libhandy-app",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.rounded-window-corners-reborn",
+    "key": "tweak-kitty-terminal",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.rounded-window-corners-reborn",
+    "key": "unfocused-shadow",
+    "value": "{'horizontalOffset': 0, 'verticalOffset': 2, 'blurOffset': 12, 'spreadRadius': -1, 'opacity': 65}"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "activate-launcher",
+    "value": "['<Super>slash']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "active-hint",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "active-hint-border-radius",
+    "value": "uint32 5"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "column-size",
+    "value": "uint32 64"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "focus-down",
+    "value": "['<Super>Down', '<Super>KP_Down', '<Super>j']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "focus-left",
+    "value": "['<Super>Left', '<Super>KP_Left', '<Super>h']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "focus-right",
+    "value": "['<Super>Right', '<Super>KP_Right', '<Super>l']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "focus-up",
+    "value": "['<Super>Up', '<Super>KP_Up', '<Super>k']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "fullscreen-launcher",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "gap-inner",
+    "value": "uint32 2"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "gap-outer",
+    "value": "uint32 2"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "hint-color-rgba",
+    "value": "'rgb(51,255,0)'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "log-level",
+    "value": "uint32 0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "management-orientation",
+    "value": "['o']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "max-window-width",
+    "value": "uint32 0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "mouse-cursor-focus-location",
+    "value": "uint32 0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "mouse-cursor-follows-active-window",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "pop-workspace-down",
+    "value": "['<Super><Shift>Down', '<Super><Shift>KP_Down', '<Super><Shift>j']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "pop-workspace-up",
+    "value": "['<Super><Shift>Up', '<Super><Shift>KP_Up', '<Super><Shift>k']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "row-size",
+    "value": "uint32 64"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "show-skip-taskbar",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "show-title",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "smart-gaps",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "snap-to-grid",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "stacking-with-mouse",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-accept",
+    "value": "['Return', 'KP_Enter']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-by-default",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-enter",
+    "value": "['<Super>Return', '<Super>KP_Enter']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-move-down",
+    "value": "['Down', 'KP_Down', 'j']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-move-down-global",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-move-left",
+    "value": "['Left', 'KP_Left', 'h']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-move-left-global",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-move-right",
+    "value": "['Right', 'KP_Right', 'l']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-move-right-global",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-move-up",
+    "value": "['Up', 'KP_Up', 'k']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-move-up-global",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-orientation",
+    "value": "['<Super>o']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-reject",
+    "value": "['Escape']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-resize-down",
+    "value": "['<Shift>Down', '<Shift>KP_Down', '<Shift>j']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-resize-left",
+    "value": "['<Shift>Left', '<Shift>KP_Left', '<Shift>h']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-resize-right",
+    "value": "['<Shift>Right', '<Shift>KP_Right', '<Shift>l']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-resize-up",
+    "value": "['<Shift>Up', '<Shift>KP_Up', '<Shift>k']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-swap-down",
+    "value": "['<Primary>Down', '<Primary>KP_Down', '<Primary>j']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-swap-left",
+    "value": "['<Primary>Left', '<Primary>KP_Left', '<Primary>h']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-swap-right",
+    "value": "['<Primary>Right', '<Primary>KP_Right', '<Primary>l']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "tile-swap-up",
+    "value": "['<Primary>Up', '<Primary>KP_Up', '<Primary>k']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "toggle-floating",
+    "value": "['<Super>g']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "toggle-stacking",
+    "value": "['s']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "toggle-stacking-global",
+    "value": "['<Super>s']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.pop-shell",
+    "key": "toggle-tiling",
+    "value": "['<Super>y']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "blur",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "brightness",
+    "value": "0.76000000000000001"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "corner-radius",
+    "value": "0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "customize",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "force-light-text",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "gradient-panel",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "gradient-panel-mode",
+    "value": "0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "override-background",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "override-background-dynamically",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "override-background-dynamically-mode",
+    "value": "1"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "pipeline",
+    "value": "'pipeline_default'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "rounded-corners",
+    "value": "0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "sigma",
+    "value": "24"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "static-blur",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "style-panel",
+    "value": "4"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.panel",
+    "key": "unblur-in-overview",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.dash-to-dock",
+    "key": "blur",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.dash-to-dock",
+    "key": "brightness",
+    "value": "0.78000000000000003"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.dash-to-dock",
+    "key": "customize",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.dash-to-dock",
+    "key": "override-background",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.dash-to-dock",
+    "key": "pipeline",
+    "value": "'pipeline_default'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.dash-to-dock",
+    "key": "sigma",
+    "value": "36"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.dash-to-dock",
+    "key": "static-blur",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.dash-to-dock",
+    "key": "style-dash-to-dock",
+    "value": "3"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.dash-to-dock",
+    "key": "unblur-in-overview",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.lockscreen",
+    "key": "blur",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.lockscreen",
+    "key": "pipeline",
+    "value": "'pipeline_default'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.overview",
+    "key": "blur",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.overview",
+    "key": "pipeline",
+    "value": "'pipeline_default'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.overview",
+    "key": "style-components",
+    "value": "4"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.appfolder",
+    "key": "blur",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.appfolder",
+    "key": "brightness",
+    "value": "0.59999999999999998"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.appfolder",
+    "key": "customize",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.appfolder",
+    "key": "pipeline",
+    "value": "'pipeline_default'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.appfolder",
+    "key": "sigma",
+    "value": "30"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.appfolder",
+    "key": "style-dialogs",
+    "value": "4"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.coverflow-alt-tab",
+    "key": "blur",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.blur-my-shell.coverflow-alt-tab",
+    "key": "pipeline",
+    "value": "'pipeline_default'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "active-screen-edges",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "cycle-layouts",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "cycle-layouts-backward",
+    "value": "['<Shift>']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "edge-tiling-mode",
+    "value": "'default'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "edge-tiling-offset",
+    "value": "uint32 16"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-autotiling",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-blur-selected-tilepreview",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-blur-snap-assistant",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-directional-focus-tiled-only",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-move-keybindings",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-screen-edges-windows-suggestions",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-smart-window-border-radius",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-snap-assist",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-snap-assistant-windows-suggestions",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-span-multiple-tiles",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-tiling-system",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-tiling-system-windows-suggestions",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-window-border",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "enable-wraparound-focus",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "focus-window-down",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "focus-window-left",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "focus-window-next",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "focus-window-prev",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "focus-window-right",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "focus-window-up",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "highlight-current-window",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "inner-gaps",
+    "value": "uint32 8"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "move-window-center",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "move-window-down",
+    "value": "['<Super>Down']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "move-window-left",
+    "value": "['<Super>Left']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "move-window-right",
+    "value": "['<Super>Right']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "move-window-up",
+    "value": "['<Super>Up']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "outer-gaps",
+    "value": "uint32 8"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "overridden-settings",
+    "value": "\"{\\\"org.gnome.mutter.keybindings\\\":{\\\"toggle-tiled-right\\\":\\\"['<Primary><Super>Right', '<Super>Right']\\\",\\\"toggle-tiled-left\\\":\\\"['<Primary><Super>Left', '<Super>Left']\\\"},\\\"org.gnome.desktop.wm.keybindings\\\":{\\\"maximize\\\":\\\"['<Super>Up']\\\",\\\"unmaximize\\\":\\\"['<Super>Down', '<Alt>F5']\\\"},\\\"org.gnome.mutter\\\":{\\\"edge-tiling\\\":\\\"true\\\"}}\""
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "override-alt-tab",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "override-window-menu",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "quarter-tiling-threshold",
+    "value": "uint32 10"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "raise-together",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "resize-complementing-windows",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "restore-window-original-size",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "selected-layouts",
+    "value": "[['Desenvolvimento'], ['Pesquisa'], ['Comunicação']]"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "show-indicator",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "snap-assist-sync-layout",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "snap-assistant-animation-time",
+    "value": "uint32 120"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "snap-assistant-threshold",
+    "value": "42"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "span-multiple-tiles-activation-key",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "span-window-all-tiles",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "span-window-down",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "span-window-left",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "span-window-right",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "span-window-up",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "sync-layout-across-workspaces",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "tile-preview-animation-time",
+    "value": "uint32 90"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "tiling-system-activation-key",
+    "value": "['2']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "tiling-system-deactivation-key",
+    "value": "@as []"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "top-edge-maximize",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "untile-all-windows",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "untile-window",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "window-border-color",
+    "value": "'#15a6f0'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "window-border-width",
+    "value": "uint32 3"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "window-use-custom-border-color",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-magic-lamp-effect",
+    "key": "duration",
+    "value": "300.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-magic-lamp-effect",
+    "key": "effect",
+    "value": "'default'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-magic-lamp-effect",
+    "key": "x-tiles",
+    "value": "10.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-magic-lamp-effect",
+    "key": "y-tiles",
+    "value": "10.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "animation-time",
+    "value": "0.29999999999999999"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "bind-to-switch-applications",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "bind-to-switch-windows",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "blur-radius",
+    "value": "0.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "coverflow-switch-applications",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "coverflow-switch-applications-backward",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "coverflow-switch-windows",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "coverflow-switch-windows-backward",
+    "value": "['']"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "coverflow-window-angle",
+    "value": "90.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "coverflow-window-offset-width",
+    "value": "50.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "current-workspace-only",
+    "value": "'all-currentfirst'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "desaturate-factor",
+    "value": "0.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "dim-factor",
+    "value": "1.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "easing-function",
+    "value": "'ease-out-quart'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "hide-panel",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "highlight-color",
+    "value": "(1.0, 1.0, 1.0)"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "highlight-mouse-over",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "highlight-use-theme-color",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "icon-add-remove-effects",
+    "value": "'Fade Only'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "icon-has-shadow",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "icon-style",
+    "value": "'Classic'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "invert-swipes",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "offset",
+    "value": "0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "overlay-icon-opacity",
+    "value": "1.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "overlay-icon-size",
+    "value": "128.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "perspective-correction-method",
+    "value": "'Move Camera'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "position",
+    "value": "'Bottom'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "prefs-default-height",
+    "value": "600.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "prefs-default-width",
+    "value": "700.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "preview-scaling-factor",
+    "value": "0.80000000000000004"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "raise-mouse-over",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "randomize-animation-times",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "switch-application-behaves-like-switch-windows",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "switcher-background-color",
+    "value": "(0.039215686274509803, 0.51764705882352946, 1.0)"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "switcher-looping-method",
+    "value": "'Flip Stack'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "switcher-style",
+    "value": "'Coverflow'"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "tint-blend",
+    "value": "0.0"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "tint-color",
+    "value": "(0.0, 0.0, 0.0)"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "tint-use-theme-color",
+    "value": "true"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "use-glitch-effect",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "use-tint",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-spatial-window-switcher",
+    "key": "verbose-logging",
+    "value": "false"
+  },
+  {
+    "schema": "org.gnome.shell.extensions.zorin-tiling-shell",
+    "key": "layouts-json",
+    "value": "'[{\"id\":\"Layout 1\",\"tiles\":[{\"x\":0,\"y\":0,\"width\":0.5,\"height\":1,\"groups\":[1]},{\"x\":0.5,\"y\":0,\"width\":0.5,\"height\":1,\"groups\":[1]}]},{\"id\":\"Layout 2\",\"tiles\":[{\"x\":0,\"y\":0,\"width\":0.5,\"height\":0.5,\"groups\":[1,3]},{\"x\":0.5,\"y\":0,\"width\":0.5,\"height\":0.5,\"groups\":[2,1]},{\"x\":0.5,\"y\":0.5,\"width\":0.5,\"height\":0.5,\"groups\":[2,1]},{\"x\":0,\"y\":0.5,\"width\":0.5,\"height\":0.5,\"groups\":[3,1]}]},{\"id\":\"Layout 3\",\"tiles\":[{\"x\":0,\"y\":0,\"width\":0.67,\"height\":1,\"groups\":[1]},{\"x\":0.67,\"y\":0,\"width\":0.33,\"height\":1,\"groups\":[1]}]},{\"id\":\"Layout 4\",\"tiles\":[{\"x\":0,\"y\":0,\"width\":0.333,\"height\":1,\"groups\":[1]},{\"x\":0.333,\"y\":0,\"width\":0.333,\"height\":1,\"groups\":[2,1]},{\"x\":0.666,\"y\":0,\"width\":0.333,\"height\":1,\"groups\":[2]}]},{\"id\":\"Layout 5\",\"tiles\":[{\"x\":0,\"y\":0,\"width\":0.5,\"height\":1,\"groups\":[1]},{\"x\":0.5,\"y\":0,\"width\":0.5,\"height\":0.5,\"groups\":[2,1]},{\"x\":0.5,\"y\":0.5,\"width\":0.5,\"height\":0.5,\"groups\":[2,1]}]},{\"id\":\"Layout 6\",\"tiles\":[{\"x\":0,\"y\":0,\"width\":0.22,\"height\":0.5,\"groups\":[1,2]},{\"x\":0,\"y\":0.5,\"width\":0.22,\"height\":0.5,\"groups\":[1,2]},{\"x\":0.22,\"y\":0,\"width\":0.56,\"height\":1,\"groups\":[2,3]},{\"x\":0.78,\"y\":0,\"width\":0.22,\"height\":0.5,\"groups\":[3,4]},{\"x\":0.78,\"y\":0.5,\"width\":0.22,\"height\":0.5,\"groups\":[3,4]}]},{\"id\":\"Desenvolvimento\",\"tiles\":[{\"x\":0,\"y\":0,\"width\":0.65,\"height\":1,\"groups\":[1]},{\"x\":0.65,\"y\":0,\"width\":0.35,\"height\":0.5,\"groups\":[1,2]},{\"x\":0.65,\"y\":0.5,\"width\":0.35,\"height\":0.5,\"groups\":[1,2]}]},{\"id\":\"Pesquisa\",\"tiles\":[{\"x\":0,\"y\":0,\"width\":0.6,\"height\":1,\"groups\":[1]},{\"x\":0.6,\"y\":0,\"width\":0.4,\"height\":1,\"groups\":[1]}]},{\"id\":\"Comunica\\\\u00e7\\\\u00e3o\",\"tiles\":[{\"x\":0,\"y\":0,\"width\":0.5,\"height\":1,\"groups\":[1]},{\"x\":0.5,\"y\":0,\"width\":0.5,\"height\":1,\"groups\":[1]}]}]'"
+  }
+]

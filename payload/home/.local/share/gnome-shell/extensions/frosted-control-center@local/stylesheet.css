@@ -1,0 +1,43 @@
+.fcc-popup { background-color: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
+.fcc-wrapper { padding: 0 !important; background-color: transparent !important; }
+.fcc-shell { width: 338px; }
+.fcc-glass { background-color: rgba(24,40,53,0.32); border: 1px solid rgba(255,255,255,0.30); border-radius: 30px; }
+.fcc-content { padding: 16px; spacing: 11px; color: #f7fbff; }
+.fcc-top { spacing: 12px; }
+.fcc-left, .fcc-right { width: 147px; spacing: 10px; }
+.fcc-tile { height: 51px; padding: 0 11px; border: 1px solid rgba(255,255,255,0.16); border-radius: 25px; background-color: rgba(255,255,255,0.10); color: white; transition-duration: 120ms; }
+.fcc-tile:hover, .fcc-circle:hover { background-color: rgba(255,255,255,0.24); }
+.fcc-tile:active { background-color: rgba(14,148,205,0.42); border-color: rgba(170,240,255,0.4); }
+.fcc-tile:focus, .fcc-circle:focus, .fcc-media-button:focus { box-shadow: inset 0 0 0 2px rgba(150,214,255,0.85); }
+.fcc-tile-row { spacing: 9px; }
+.fcc-tile-icon { color: white; }
+.fcc-tile-title { font-size: 10pt; font-weight: 600; color: white; }
+.fcc-tile-subtitle { font-size: 8pt; color: rgba(255,255,255,0.76); }
+.fcc-focus { height: 44px; }
+.fcc-radios { spacing: 14px; padding: 0 6px; }
+.fcc-circle { width: 53px; height: 53px; border-radius: 28px; border: 1px solid rgba(255,255,255,0.24); background-color: rgba(255,255,255,0.10); color: white; transition-duration: 120ms; }
+.fcc-circle:active { background-color: rgba(250,253,255,0.95); color: #087fb3; border-color: transparent; }
+.fcc-send { background-color: rgba(255,255,255,0.88); color: #168baf; }
+.fcc-media { height: 103px; padding: 10px 10px 8px; spacing: 3px; border-radius: 24px; background-color: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.16); }
+.fcc-cover { border-radius: 11px; padding-bottom: 3px; color: #e7f4ff; }
+.fcc-track { font-size: 9pt; font-weight: 600; color: white; }
+.fcc-artist { font-size: 8pt; color: rgba(255,255,255,0.68); }
+.fcc-playback { spacing: 6px; }
+.fcc-media-button { width: 28px; height: 25px; border-radius: 9px; padding: 0; color: #ffffff; background-color: transparent; }
+.fcc-media-button:hover { background-color: rgba(255,255,255,0.16); }
+.fcc-views { spacing: 14px; padding: 0 6px; }
+.fcc-views .fcc-circle { height: 44px; width: 53px; border-radius: 24px; }
+.fcc-slider-card { padding: 9px 13px 11px; spacing: 5px; border-radius: 21px; border: 1px solid rgba(255,255,255,0.21); background-color: rgba(255,255,255,0.10); }
+.fcc-slider-heading { spacing: 8px; }
+.fcc-slider-title { font-size: 9pt; font-weight: 500; color: #ffffff; }
+.fcc-slider-percent { font-size: 8pt; color: rgba(255,255,255,0.68); }
+.fcc-slider-row { spacing: 9px; }
+.fcc-slider { height: 19px; color: white; -barlevel-height: 9px; -barlevel-background-color: rgba(255,255,255,0.23); -barlevel-active-background-color: rgba(255,255,255,0.96); -barlevel-overdrive-color: #79d3ff; -barlevel-border-width: 0; -slider-handle-radius: 7px; -slider-handle-border-width: 0; }
+.fcc-shortcuts { spacing: 23px; padding: 0 2px; }
+.fcc-shortcuts .fcc-circle { width: 53px; height: 53px; }
+.fcc-footer { padding: 0 4px; spacing: 6px; }
+.fcc-caption { font-size: 7pt; letter-spacing: 1px; color: rgba(255,255,255,0.48); }
+
+.fcc-power-options { spacing: 3px; padding: 6px; border-radius: 16px; background-color: rgba(255,255,255,0.08); }
+.fcc-power-option { padding: 9px 12px; border-radius: 10px; color: white; }
+.fcc-power-option:hover, .fcc-power-option:focus { background-color: rgba(255,255,255,0.15); }

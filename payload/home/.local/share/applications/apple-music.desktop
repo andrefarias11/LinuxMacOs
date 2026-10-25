@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Apple Music
+Exec=firefox --new-window https://music.apple.com/
+Icon=multimedia-player
+Categories=AudioVideo;Audio;
+Terminal=false

@@ -1,0 +1,18 @@
+[
+  "org.gnome.Nautilus.desktop",
+  "spotlight.desktop",
+  "firefox.desktop",
+  "org.gnome.Evolution.desktop",
+  "org.gnome.Calendar.desktop",
+  "io.github.nuttyartist.notes.desktop",
+  "org.gnome.eog.desktop",
+  "apple-music.desktop",
+  "vlc.desktop",
+  "org.gnome.Software.desktop",
+  "org.gnome.Settings.desktop",
+  "com.microsoft.VSCode.desktop",
+  "org.gnome.Terminal.desktop",
+  "dbeaver-ce.desktop",
+  "google-chrome.desktop",
+  "dock-downloads.desktop"
+]
