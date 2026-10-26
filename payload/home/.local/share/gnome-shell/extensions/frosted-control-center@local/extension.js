@@ -15,7 +15,7 @@ import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 
 const clamp = value => Math.max(0, Math.min(1, Number(value) || 0));
 const Center = GObject.registerClass(class Center extends PanelMenu.Button {
-    _init() {
+    _init(iconPath) {
         super._init(0.0, 'Central de Controle');
         this._connections = [];
         this._shutdownId = global.connect('shutdown', () => this._cleanup());
@@ -23,10 +23,10 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         this._notifySettings = new Gio.Settings({schema_id: 'org.gnome.desktop.notifications'});
         this._interfaceSettings = new Gio.Settings({schema_id: 'org.gnome.desktop.interface'});
         this._colorSettings = new Gio.Settings({schema_id: 'org.gnome.settings-daemon.plugins.color'});
-        this.add_child(new St.Icon({icon_name: 'preferences-system-symbolic', style_class: 'system-status-icon'}));
+        this.add_child(new St.Icon({gicon: Gio.icon_new_for_string(iconPath), style_class: 'system-status-icon'}));
         this.menu.box.add_style_class_name('fcc-popup');
         const item = new PopupMenu.PopupBaseMenuItem({reactive: false, can_focus: false, style_class: 'fcc-wrapper'});
-        const shell = new St.Widget({layout_manager: new Clutter.BinLayout(), style_class: 'fcc-shell', x_expand: true});
+        const shell = new St.Widget({name: 'fcc-graphite', layout_manager: new Clutter.BinLayout(), style_class: 'fcc-shell', x_expand: true});
         const glass = new St.Widget({style_class: 'fcc-glass', x_expand: true, y_expand: true});
         this._blur = new Shell.BlurEffect({brightness: 0.80, radius: 32, mode: Shell.BlurMode.BACKGROUND});
         glass.add_effect(this._blur);
@@ -65,7 +65,7 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         this._focus.button.add_style_class_name('fcc-focus'); left.add_child(this._focus.button);
 
         this._media = new St.BoxLayout({vertical: true, style_class: 'fcc-media'}); right.add_child(this._media);
-        this._cover = new St.Icon({icon_name: 'audio-x-generic-symbolic', icon_size: 42, style_class: 'fcc-cover'});
+        this._cover = new St.Icon({icon_name: 'audio-x-generic-symbolic', icon_size: 32, style_class: 'fcc-cover'});
         this._media.add_child(this._cover);
         this._title = this._label('Sem reprodução', 'fcc-track');
         this._artist = this._label('Abra seu player', 'fcc-artist');
@@ -97,8 +97,7 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         shortcuts.add_child(this._circle('accessories-calculator-symbolic', 'Calculadora', () => this._launch(['gnome-calculator'])));
         shortcuts.add_child(this._circle('camera-photo-symbolic', 'Captura de tela', () => { this.menu.close(); Main.screenshotUI.open(); }));
         shortcuts.add_child(this._circle('emblem-system-symbolic', 'Configurações do sistema', () => this._launch(['gnome-control-center'])));
-        const footer = new St.BoxLayout({style_class: 'fcc-footer'}); content.add_child(footer);
-        footer.add_child(new St.Label({text: 'CENTRAL DE CONTROLE', style_class: 'fcc-caption', y_align: Clutter.ActorAlign.CENTER, x_expand: true}));
+        const footer = new St.BoxLayout({style_class: 'fcc-footer', x_align: Clutter.ActorAlign.END}); content.add_child(footer);
         const lock = this._mediaButton('system-lock-screen-symbolic', 'Bloquear tela', () => { this.menu.close(); Main.screenShield.lock(true); });
         footer.add_child(this._mediaButton('view-more-symbolic', 'Abrir os controles nativos do GNOME', () => {
             this.menu.close(); this._openNative?.();
@@ -159,7 +158,7 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
             this._blurEffects = new EffectsManager(this._blurConnections);
             this._blurPipelines = new PipelinesManager(this._blurSettings);
             this._backdrop = new DynamicPipeline(this._blurEffects, this._blurPipelines,
-                'pipeline_default', {corner_radius: 30});
+                'pipeline_default', {corner_radius: 22});
             this._backdrop.attach_to_container(this._shell, 'fcc-frosted-backdrop').opacity = 180;
             this._glass.remove_effect(this._blur);
         } catch (error) {
@@ -202,7 +201,7 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         const card = new St.BoxLayout({vertical: true, style_class: 'fcc-slider-card'});
         const heading = new St.BoxLayout({style_class: 'fcc-slider-heading'});
         heading.add_child(new St.Label({text: title, style_class: 'fcc-slider-title', x_expand: true}));
-        const percent = new St.Label({text: '—', style_class: 'fcc-slider-percent'}); heading.add_child(percent); card.add_child(heading);
+        card.add_child(heading);
         const row = new St.BoxLayout({style_class: 'fcc-slider-row'});
         const icon = new St.Icon({icon_name: iconName, icon_size: 16, y_align: Clutter.ActorAlign.CENTER}); row.add_child(icon);
         const slider = new Slider.Slider(0); slider.x_expand = true; slider.accessible_name = title;
@@ -213,7 +212,6 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
             let updating = false;
             const refresh = () => {
                 updating = true; slider.value = clamp(original.value); updating = false;
-                percent.text = `${Math.round(clamp(original.value) * 100)}%`;
                 slider.reactive = source.visible;
                 card.opacity = source.visible ? 255 : 115;
             };
@@ -222,9 +220,8 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
             this._connect(source, 'notify::visible', refresh);
             slider.connect('notify::value', () => {
                 if (!updating) original.value = clamp(slider.value);
-                percent.text = `${Math.round(clamp(slider.value) * 100)}%`;
             });
-        } else { slider.reactive = false; card.opacity = 115; percent.text = 'Indisponível'; }
+        } else { slider.reactive = false; card.opacity = 115; slider.accessible_name = `${title}: indisponível`; }
         return card;
     }
     _active(actor, value) { if (value) actor.add_style_pseudo_class('active'); else actor.remove_style_pseudo_class('active'); }
@@ -310,13 +307,16 @@ export default class FrostedControlCenter extends Extension {
         });
     }
     _install() {
-        this._button = new Center();
+        this._button = new Center(`${this.path}/assets/control-center-symbolic.svg`);
         Main.panel.addToStatusArea(this.uuid, this._button, 0, 'right');
         // The existing status indicators remain available as a native fallback.
         // Hide only the duplicate control-center glyph inserted by Minimal Status.
         this._duplicates = [];
         const quick = Main.panel.statusArea.quickSettings;
         this._quick = quick;
+        const box = Main.panel._rightBox;
+        if (quick.container.get_parent() === box)
+            box.set_child_above_sibling(this._button.container, quick.container);
         this._button._openNative = () => { this._nativeRequested = true; quick.menu.open(PopupAnimation.NONE); };
         this._nativeOpen = quick.menu.connect('open-state-changed', (_menu, open) => {
             if (!open) return;

@@ -30,7 +30,7 @@
 .fcc-slider-card { padding: 9px 13px 11px; spacing: 5px; border-radius: 21px; border: 1px solid rgba(255,255,255,0.21); background-color: rgba(255,255,255,0.10); }
 .fcc-slider-heading { spacing: 8px; }
 .fcc-slider-title { font-size: 9pt; font-weight: 500; color: #ffffff; }
-.fcc-slider-percent { font-size: 8pt; color: rgba(255,255,255,0.68); }
+
 .fcc-slider-row { spacing: 9px; }
 .fcc-slider { height: 19px; color: white; -barlevel-height: 9px; -barlevel-background-color: rgba(255,255,255,0.23); -barlevel-active-background-color: rgba(255,255,255,0.96); -barlevel-overdrive-color: #79d3ff; -barlevel-border-width: 0; -slider-handle-radius: 7px; -slider-handle-border-width: 0; }
 .fcc-shortcuts { spacing: 23px; padding: 0 2px; }
@@ -41,3 +41,35 @@
 .fcc-power-options { spacing: 3px; padding: 6px; border-radius: 16px; background-color: rgba(255,255,255,0.08); }
 .fcc-power-option { padding: 9px 12px; border-radius: 10px; color: white; }
 .fcc-power-option:hover, .fcc-power-option:focus { background-color: rgba(255,255,255,0.15); }
+
+/* Scoped graphite finish overrides the earlier Liquid Glass shell theme. */
+#fcc-graphite .fcc-glass {
+ background-color: rgba(34,35,41,0.58);
+ background-gradient-direction: none;
+ border: 1px solid rgba(255,255,255,0.12); border-radius: 22px;
+}
+#fcc-graphite .fcc-tile, #fcc-graphite .fcc-media, #fcc-graphite .fcc-slider-card {
+ border: none; border-radius: 18px; background-color: rgba(255,255,255,0.10);
+ background-gradient-direction: none; box-shadow: none;
+}
+#fcc-graphite .fcc-circle {
+ border: none; background-color: rgba(255,255,255,0.12);
+ background-gradient-direction: none; box-shadow: none; color: #ffffff;
+}
+#fcc-graphite .fcc-tile:hover, #fcc-graphite .fcc-circle:hover { background-color: rgba(255,255,255,0.18); }
+#fcc-graphite .fcc-tile:active, #fcc-graphite .fcc-circle:active {
+ background-color: #0a84ff; color: #ffffff; background-gradient-direction: none;
+}
+#fcc-graphite .fcc-send { background-color: rgba(255,255,255,0.12); color: #ffffff; }
+#fcc-graphite .fcc-send:hover { background-color: rgba(255,255,255,0.18); }
+#fcc-graphite .fcc-tile:focus, #fcc-graphite .fcc-circle:focus, #fcc-graphite .fcc-media-button:focus {
+ box-shadow: inset 0 0 0 2px rgba(10,132,255,0.9);
+}
+#fcc-graphite .fcc-focus { height: 51px; }
+#fcc-graphite .fcc-views .fcc-circle { width: 53px; height: 53px; border-radius: 28px; }
+#fcc-graphite .fcc-slider {
+ height: 24px; -barlevel-height: 22px;
+ -barlevel-background-color: rgba(255,255,255,0.18);
+ -barlevel-active-background-color: #ffffff;
+ -barlevel-overdrive-color: #0a84ff; -slider-handle-radius: 11px;
+}

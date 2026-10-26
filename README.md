@@ -138,3 +138,7 @@ As novas extensões carregam após sair e entrar na sessão. `bat`, `fzf`, `lazy
 - Divisor antes do atalho Downloads, borda branca translúcida e raio de 12 px na dock.
 - Banners à direita, com cantos de 16 px, fundo translúcido e borda discreta.
 - `--apps` instala `gnome-sushi`: selecione um arquivo no Nautilus e pressione Espaço para visualizar. Aplicativos já abertos podem precisar ser reabertos para carregar integrações; o instalador não encerra suas janelas.
+
+### Central de controle grafite
+
+Estados ligados usam azul sólido e ícones brancos; LocalSend permanece uma ação neutra. A superfície usa grafite com borda discreta, cantos de 22 px e blocos sem borda. Sliders têm trilho de 22 px e mantêm o valor acessível sem mostrar porcentagens no cartão. O rodapé contém apenas os controles; o painel usa um ícone SVG de dois toggles. A conectividade mantém a organização existente.
