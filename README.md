@@ -150,3 +150,7 @@ Módulo único com Wi-Fi, Bluetooth e LocalSend em linhas; Foco e dois tiles de 
 ### Central baseada no protótipo de vidro
 
 Layout adaptado à tela de 1366×768: colunas equilibradas, Foco horizontal, módulo de mídia com capa/título e controles abaixo, sliders agrupados com volume azul e rodapé separado. Superfície principal e backdrop usam raio de 26 px. As camadas nativas do popup ficam transparentes para o vidro mostrar as cores do wallpaper existente. A cor percebida depende do papel de parede; ele não é substituído. LocalSend usa seu ícone oficial quando o pacote nativo está presente. O menu de energia troca a vista principal em vez de aumentar a altura e cortar opções na tela. A atualização requer novo login.
+
+### Central reconstruída (v5)
+
+Estrutura e CSS reescritos com classes próprias, sem herdar os estilos das versões anteriores. Os ícones vetoriais usam a mesma caixa de desenho e alinhamento explícito; a centralização é medida em sessão GNOME isolada. Colunas de mesma largura, Foco com ícone e texto na horizontal, capa e informações de mídia com reprodução centralizada abaixo, sliders agrupados e rodapé separado seguem a referência visual. As ações nativas, acessibilidade, opções de energia e sincronização dos sliders foram preservadas. Alterações na extensão carregam no próximo login.

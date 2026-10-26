@@ -1,120 +1,65 @@
-/* Graphite Control Center — GNOME Shell 46. Keep backdrop radius at 22px in JS. */
-.fcc-popup { background-color: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
-.fcc-wrapper { padding: 0 !important; background-color: transparent !important; }
-.fcc-layout { width: 398px; spacing: 8px; }
-#fcc-graphite { width: 398px; color: #f5f5f7; }
-#fcc-graphite .fcc-glass {
- background-color: rgba(34,35,41,0.30); background-gradient-direction: none;
- border: 1px solid rgba(255,255,255,0.12); border-radius: 26px;
- box-shadow: 0 12px 28px rgba(0,0,0,0.32);
-}
-#fcc-graphite .fcc-content { padding: 16px; spacing: 12px; color: #f5f5f7; }
-#fcc-graphite .fcc-top { spacing: 12px; }
-#fcc-graphite .fcc-left { width: 180px; }
-#fcc-graphite .fcc-right { width: 174px; spacing: 12px; }
-#fcc-graphite .fcc-connectivity, #fcc-graphite .fcc-tile,
-#fcc-graphite .fcc-small-tile, #fcc-graphite .fcc-media,
-#fcc-graphite .fcc-slider-card {
- background-color: rgba(255,255,255,0.10); background-gradient-direction: none;
- border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; box-shadow: none; color: #f5f5f7;
-}
-#fcc-graphite .fcc-connectivity { padding: 10px 6px; spacing: 4px; }
-#fcc-graphite .fcc-connection-row {
- height: 44px; padding: 2px 4px; border: none; border-radius: 11px;
- background-color: transparent; color: #f5f5f7;
-}
-#fcc-graphite .fcc-connection-row:hover { background-color: rgba(255,255,255,0.08); }
-#fcc-graphite .fcc-tile-row { spacing: 9px; }
-#fcc-graphite .fcc-connection-icon {
- width: 32px; height: 32px; border-radius: 16px;
- background-color: rgba(255,255,255,0.13); color: #ffffff;
-}
-#fcc-graphite .fcc-connection-row:active .fcc-connection-icon { background-color: #0a84ff; color: #ffffff; }
-#fcc-graphite .fcc-tile-icon { color: #ffffff; }
-#fcc-graphite .fcc-tile-title { font-size: 10pt; font-weight: 600; color: #f5f5f7; }
-#fcc-graphite .fcc-tile-subtitle { font-size: 8pt; color: #bfc1cb; }
-#fcc-graphite .fcc-focus { height: 64px; padding: 12px; }
-#fcc-graphite .fcc-focus .fcc-tile-row { spacing: 10px; }
-#fcc-graphite .fcc-views { spacing: 12px; }
-#fcc-graphite .fcc-small-tile { width: 79px; height: 70px; padding: 0; border-radius: 16px; }
-#fcc-graphite .fcc-small-content { spacing: 5px; }
-#fcc-graphite .fcc-small-label { font-size: 8pt; }
-#fcc-graphite .fcc-tile:hover, #fcc-graphite .fcc-small-tile:hover,
-#fcc-graphite .fcc-circle:hover { background-color: rgba(255,255,255,0.18); }
-#fcc-graphite .fcc-tile:active, #fcc-graphite .fcc-circle:active {
- background-color: #0a84ff; color: #ffffff; background-gradient-direction: none;
-}
-#fcc-graphite .fcc-tile:active .fcc-tile-subtitle { color: rgba(255,255,255,0.88); }
-#fcc-graphite .fcc-connection-row:focus, #fcc-graphite .fcc-tile:focus,
-#fcc-graphite .fcc-small-tile:focus, #fcc-graphite .fcc-circle:focus,
-#fcc-graphite .fcc-media-button:focus, #fcc-graphite .fcc-slider:focus {
- box-shadow: inset 0 0 0 2px rgba(10,132,255,0.95);
-}
-#fcc-graphite .fcc-media { padding: 14px; spacing: 14px; }
-#fcc-graphite .fcc-media-header { spacing: 14px; }
-#fcc-graphite .fcc-cover-tile { width: 62px; height: 62px; border-radius: 12px; background-color: rgba(255,255,255,0.16); }
-#fcc-graphite .fcc-cover { border-radius: 8px; color: #f5f5f7; }
-#fcc-graphite .fcc-media-text { spacing: 3px; }
-#fcc-graphite .fcc-track { font-size: 9pt; font-weight: 600; color: #f5f5f7; }
-#fcc-graphite .fcc-artist { font-size: 8pt; color: #bfc1cb; }
-#fcc-graphite .fcc-playback { spacing: 36px; }
-#fcc-graphite .fcc-media-button {
- width: 25px; height: 28px; border-radius: 9px; padding: 0;
- color: #ffffff; background-color: transparent;
-}
-#fcc-graphite .fcc-media-button:hover { background-color: rgba(255,255,255,0.16); }
-#fcc-graphite .fcc-slider-card { padding: 0; spacing: 7px; border: none; background-color: transparent; }
-#fcc-graphite .fcc-slider-title { font-size: 9pt; font-weight: 500; color: #f5f5f7; }
-#fcc-graphite .fcc-slider-pill { height: 28px; }
-#fcc-graphite .fcc-slider {
- height: 28px; color: #ffffff;
- -barlevel-height: 26px; -barlevel-background-color: rgba(255,255,255,0.18);
- -barlevel-active-background-color: #ffffff; -barlevel-overdrive-color: #0a84ff;
- -barlevel-border-width: 0; -slider-handle-radius: 13px; -slider-handle-border-width: 0;
-}
-#fcc-graphite .fcc-slider-icon { margin-left: 10px; color: #f5f5f7; }
-#fcc-graphite .fcc-slider-icon.on-fill { color: #555861; }
-#fcc-graphite .fcc-shortcuts { spacing: 10px; padding: 0; }
-#fcc-graphite .fcc-circle {
- width: 54px; height: 46px; border-radius: 16px; border: none;
- background-color: rgba(255,255,255,0.12); background-gradient-direction: none;
- color: #ffffff; box-shadow: none;
-}
-#fcc-graphite .fcc-footer { spacing: 8px; padding: 0 2px; }
-#fcc-graphite .fcc-power-options {
- spacing: 3px; padding: 6px; border-radius: 16px; background-color: rgba(255,255,255,0.08);
-}
-#fcc-graphite .fcc-power-option { padding: 9px 12px; border-radius: 10px; color: #f5f5f7; }
-#fcc-graphite .fcc-power-option:hover, #fcc-graphite .fcc-power-option:focus { background-color: rgba(255,255,255,0.15); }
-
-/* Prototype: glass cards, grouped sliders, and a separate control footer. */
-#fcc-graphite .fcc-sliders-module {
- padding: 12px; spacing: 15px; border-radius: 18px;
- background-color: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
-}
-#fcc-graphite .fcc-focus .fcc-tile-icon { padding: 8px; background-color: rgba(255,255,255,0.14); border-radius: 22px; }
-#fcc-graphite .fcc-focus .fcc-tile-subtitle { font-size: 8pt; }
-#fcc-graphite .fcc-small-label { font-size: 10pt; }
-#fcc-graphite .fcc-small-content { spacing: 9px; }
-#fcc-graphite .fcc-play-main { width: 36px; }
-#fcc-graphite .fcc-play-main StIcon { icon-size: 24px; }
-#fcc-graphite .fcc-slider-volume { -barlevel-active-background-color: #0a84ff; -slider-handle-radius: 0; }
-#fcc-footer, #fcc-power-menu {
- padding: 9px 14px; spacing: 10px; border-radius: 22px;
- background-color: rgba(34,35,41,0.52); color: #f5f5f7;
- border: 1px solid rgba(255,255,255,0.16); box-shadow: 0 6px 16px rgba(0,0,0,0.24);
-}
-#fcc-footer .fcc-media-button {
- width: 38px; height: 38px; border-radius: 20px; padding: 0;
- color: #ffffff; background-color: rgba(255,255,255,0.14);
-}
-#fcc-footer .fcc-media-button:hover, #fcc-footer .fcc-media-button:focus { background-color: rgba(255,255,255,0.25); }
-#fcc-power-menu .fcc-power-option { padding: 10px; border-radius: 10px; color: white; }
-#fcc-power-menu .fcc-power-option:hover, #fcc-power-menu .fcc-power-option:focus { background-color: #0a84ff; }
-
-.fcc-popup-frame { -arrow-background-color: transparent; -arrow-border-color: transparent; -arrow-border-width: 0; -arrow-rise: 0; }
-
+/* v5: rebuilt layout. Geometry belongs here; icons use a shared centered 24x24 viewBox. */
 #fcc-popup-content { background-color: transparent !important; background-gradient-direction: none; border: none !important; box-shadow: none !important; padding: 0 !important; margin: 0; }
+.fcc-popup-frame { -arrow-background-color: transparent; -arrow-border-color: transparent; -arrow-border-width: 0; -arrow-rise: 0; }
+.fcc-wrapper { padding: 0 !important; background-color: transparent !important; }
+.cc5-layout { width: 404px; spacing: 8px; }
+#cc5-root { width: 404px; color: #ffffff; }
+#cc5-root .cc5-glass { background-color: rgba(31,42,54,0.24); border: 1px solid rgba(255,255,255,0.22); border-radius: 26px; box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+#cc5-root .cc5-content { padding: 13px; spacing: 12px; }
+#cc5-root .cc5-top { spacing: 12px; }
+#cc5-root .cc5-network, #cc5-root .cc5-right { width: 183px; }
+#cc5-root .cc5-network, #cc5-root .cc5-focus, #cc5-root .cc5-small,
+#cc5-root .cc5-media, #cc5-root .cc5-sliders {
+ background-color: rgba(225,239,255,0.13); border: 1px solid rgba(255,255,255,0.16);
+ border-radius: 20px; color: #ffffff;
+ box-shadow: 0 3px 7px rgba(0,0,0,0.12);
+}
+#cc5-root .cc5-network { width: 167px; padding: 10px 7px; spacing: 4px; }
+#cc5-root .cc5-connection { height: 44px; padding: 2px 3px; border-radius: 11px; background-color: transparent; }
+#cc5-root .cc5-connection-content { spacing: 10px; }
+#cc5-root .cc5-row-labels { spacing: 3px; }
+#cc5-root .cc5-row-title { font-size: 11pt; font-weight: 500; color: #ffffff; }
+#cc5-root .cc5-row-subtitle { font-size: 8.5pt; color: rgba(255,255,255,0.64); }
+#cc5-root .cc5-disc { width: 36px; height: 36px; border-radius: 18px; background-color: rgba(255,255,255,0.17); color: #ffffff; }
+#cc5-root .cc5-connection:active .cc5-disc { background-color: #0a84ff; color: #ffffff; }
+#cc5-root .cc5-localsend-disc { background-color: rgba(255,255,255,0.93); color: #258f96; }
+#cc5-root .cc5-right { spacing: 12px; }
+#cc5-root .cc5-focus { height: 88px; padding: 0; }
+#cc5-root .cc5-focus-content { spacing: 10px; }
+#cc5-root .cc5-focus-disc { width: 38px; height: 38px; border-radius: 19px; }
+#cc5-root .cc5-focus-label { font-size: 13pt; font-weight: 400; }
+#cc5-root .cc5-focus:active .cc5-disc { background-color: #0a84ff; }
+#cc5-root .cc5-views { spacing: 12px; }
+#cc5-root .cc5-small { width: 83px; height: 70px; padding: 0; }
+#cc5-root .cc5-small-content { spacing: 8px; }
+#cc5-root .cc5-small-label { font-size: 11pt; }
+#cc5-root .cc5-media { padding: 15px; spacing: 13px; }
+#cc5-root .cc5-media-header { spacing: 14px; }
+#cc5-root .cc5-cover { width: 62px; height: 62px; background-color: rgba(255,255,255,0.20); border-radius: 12px; }
+#cc5-root .cc5-media-text { spacing: 5px; }
+#cc5-root .cc5-track { font-size: 12pt; font-weight: 400; color: #ffffff; }
+#cc5-root .cc5-artist { font-size: 11pt; color: rgba(255,255,255,0.63); }
+#cc5-root .cc5-playback { spacing: 34px; }
+#cc5-root .cc5-media-button { width: 38px; height: 32px; padding: 0; border-radius: 10px; color: #ffffff; background-color: transparent; }
+#cc5-root .cc5-sliders { padding: 13px; spacing: 15px; }
+#cc5-root .cc5-slider-card { spacing: 8px; }
+#cc5-root .cc5-slider-label { font-size: 12pt; color: #ffffff; }
+#cc5-root .cc5-pill { height: 30px; }
+#cc5-root .cc5-slider { height: 30px; color: #ffffff; -barlevel-height: 28px; -barlevel-background-color: rgba(255,255,255,0.19); -barlevel-active-background-color: #ffffff; -barlevel-overdrive-color: #0a84ff; -barlevel-border-width: 0; -slider-handle-radius: 13px; -slider-handle-border-width: 0; }
+#cc5-root .cc5-slider.cc5-volume { -barlevel-active-background-color: #0a84ff; -slider-handle-radius: 0; }
+#cc5-root .cc5-slider-overlay { padding-left: 9px; }
+#cc5-root .cc5-slider-glyph { color: #ffffff; }
+#cc5-root .cc5-slider-glyph.on-fill { color: #888b92; }
+#cc5-root .cc5-shortcuts { spacing: 9px; }
+#cc5-root .cc5-shortcut { width: 54px; height: 47px; padding: 0; border-radius: 15px; color: #ffffff; background-color: rgba(0,0,0,0.16); }
+#cc5-root .cc5-shortcut:active { background-color: #0a84ff; }
+#cc5-root .cc5-small:hover, #cc5-root .cc5-focus:hover, #cc5-root .cc5-shortcut:hover, #cc5-root .cc5-media-button:hover { background-color: rgba(255,255,255,0.23); }
+#cc5-root .cc5-connection:hover { background-color: rgba(255,255,255,0.07); }
+#cc5-root StButton:focus, #cc5-root .cc5-slider:focus { box-shadow: inset 0 0 0 2px rgba(10,132,255,0.9); }
+#cc5-footer, #cc5-power-menu { padding: 8px 13px; spacing: 10px; border-radius: 22px; background-color: rgba(31,42,54,0.40); border: 1px solid rgba(255,255,255,0.22); color: #ffffff; box-shadow: 0 5px 15px rgba(0,0,0,0.20); }
+#cc5-footer .cc5-footer-button { width: 40px; height: 40px; padding: 0; border-radius: 20px; background-color: rgba(255,255,255,0.18); color: #ffffff; }
+#cc5-footer .cc5-footer-button:hover, #cc5-footer .cc5-footer-button:focus { background-color: rgba(255,255,255,0.30); }
+#cc5-power-menu .cc5-power-option { padding: 10px; border-radius: 10px; color: #ffffff; }
+#cc5-power-menu .cc5-power-option:hover, #cc5-power-menu .cc5-power-option:focus { background-color: #0a84ff; }
 
-#fcc-graphite .fcc-send-brand { background-color: rgba(255,255,255,0.90); }
-#fcc-graphite .fcc-send-brand .fcc-tile-icon { icon-size: 27px; }
+#cc5-footer .cc5-footer-button.cc5-more { background-color: transparent; }
