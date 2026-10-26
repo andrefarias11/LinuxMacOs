@@ -1,3 +1,14 @@
 #panel { height: 26px; }
 #panel .panel-button { -natural-hpadding: 5px; -minimum-hpadding: 3px; }
 #panel .panel-status-indicators-box { spacing: 3px; }
+
+.mac-notification-banner { margin-right: 12px; }
+.mac-notification-banner .notification-banner {
+ border-radius: 16px; background-color: rgba(34,35,41,0.94);
+ border: 1px solid rgba(255,255,255,0.18);
+ box-shadow: 0 6px 20px rgba(0,0,0,0.30);
+}
+#dashtodockContainer #dash .dash-background {
+ border: 1px solid rgba(255,255,255,0.22);
+ border-radius: 12px;
+}

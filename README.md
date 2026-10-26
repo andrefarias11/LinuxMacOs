@@ -129,3 +129,12 @@ futuras do sistema/navegador podem exigir adaptar o kit antes de restaurar.
 - Terminal com 12% de transparência e blur restrito a `Gnome-terminal`; borda branca discreta de 1 px e sombras suaves nas janelas compatíveis.
 
 As novas extensões carregam após sair e entrar na sessão. `bat`, `fzf`, `lazygit` e `starship` não são instalados por esses refinamentos. Configurações de Wi-Fi, DNS e VPN não fazem parte deste kit.
+
+### Controles, animações e Quick Look
+
+- Botões GTK à esquerda: `close,minimize,maximize:`. O VS Code mantém `window.titleBarStyle=custom`; seus controles próprios não são reposicionados por este ajuste.
+- Fontes com antialiasing `grayscale` e hinting `none`. Em telas de baixa resolução, `slight` continua sendo uma alternativa caso o texto pareça menos nítido.
+- Magnificação da dock por distância ao ponteiro, com curva gaussiana e alcance de quatro posições; pulo por até quatro segundos enquanto o aplicativo informa `Shell.AppState.STARTING`. Aplicativos que não anunciam esse estado podem não apresentar o pulo. Respeita a preferência global de animações.
+- Divisor antes do atalho Downloads, borda branca translúcida e raio de 12 px na dock.
+- Banners à direita, com cantos de 16 px, fundo translúcido e borda discreta.
+- `--apps` instala `gnome-sushi`: selecione um arquivo no Nautilus e pressione Espaço para visualizar. Aplicativos já abertos podem precisar ser reabertos para carregar integrações; o instalador não encerra suas janelas.

@@ -1,8 +1,13 @@
 import GLib from 'gi://GLib';
+import Clutter from 'gi://Clutter';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 export default class MacRefinements extends Extension {
  enable() {
+  this._banner=Main.messageTray._bannerBin;
+  this._bannerAlign=this._banner.x_align;
+  this._banner.x_align=Clutter.ActorAlign.END;
+  this._banner.add_style_class_name('mac-notification-banner');
   this._label=Main.panel.statusArea.dateMenu._clockDisplay;
   this._tick=()=>{
    if(Main.sessionMode.isLocked)return;
@@ -17,6 +22,9 @@ export default class MacRefinements extends Extension {
   this._tick();
  }
  disable() {
+  this._banner.x_align=this._bannerAlign;
+  this._banner.remove_style_class_name('mac-notification-banner');
+  this._banner=null;
   if(this._timer)GLib.Source.remove(this._timer);
   if(this._signal)this._label.disconnect(this._signal);
   this._timer=this._signal=0;

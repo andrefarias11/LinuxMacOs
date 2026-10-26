@@ -110,7 +110,7 @@ def gsettings_restore(home,backup):
  for warning in warnings:print('AVISO:',warning)
 def apps_install():
  run(['sudo','apt-get','update'])
- run(['sudo','apt-get','install','-y','python3-gi','rofi','zsh','git','curl','flatpak','gnome-shell-extensions','gnome-terminal','gnome-text-editor','gnome-calendar','gnome-contacts','gnome-weather','evolution','eog','vlc','gnome-software','gnome-system-monitor','gnome-tweaks','gir1.2-dbusmenu-glib-0.4'])
+ run(['sudo','apt-get','install','-y','python3-gi','rofi','zsh','git','curl','flatpak','gnome-shell-extensions','gnome-terminal','gnome-sushi','gnome-text-editor','gnome-calendar','gnome-contacts','gnome-weather','evolution','eog','vlc','gnome-software','gnome-system-monitor','gnome-tweaks','gir1.2-dbusmenu-glib-0.4'])
  run(['flatpak','remote-add','--user','--if-not-exists','flathub','https://dl.flathub.org/repo/flathub.flatpakrepo'])
  run(['flatpak','install','--user','-y','flathub','io.github.nuttyartist.notes','com.visualstudio.code','io.dbeaver.DBeaverCommunity','com.google.Chrome','org.deskflow.deskflow'])
  if os.environ.get('XDG_SESSION_TYPE')=='x11':

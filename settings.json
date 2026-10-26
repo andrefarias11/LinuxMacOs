@@ -77,12 +77,12 @@
   {
     "schema": "org.gnome.desktop.interface",
     "key": "font-antialiasing",
-    "value": "'rgba'"
+    "value": "'grayscale'"
   },
   {
     "schema": "org.gnome.desktop.interface",
     "key": "font-hinting",
-    "value": "'slight'"
+    "value": "'none'"
   },
   {
     "schema": "org.gnome.desktop.interface",
@@ -252,7 +252,7 @@
   {
     "schema": "org.gnome.desktop.wm.preferences",
     "key": "button-layout",
-    "value": "':minimize,maximize,close'"
+    "value": "'close,minimize,maximize:'"
   },
   {
     "schema": "org.gnome.desktop.wm.preferences",
