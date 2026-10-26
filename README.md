@@ -142,3 +142,7 @@ As novas extensões carregam após sair e entrar na sessão. `bat`, `fzf`, `lazy
 ### Central de controle grafite
 
 Estados ligados usam azul sólido e ícones brancos; LocalSend permanece uma ação neutra. A superfície usa grafite com borda discreta, cantos de 22 px e blocos sem borda. Sliders têm trilho de 22 px e mantêm o valor acessível sem mostrar porcentagens no cartão. O rodapé contém apenas os controles; o painel usa um ícone SVG de dois toggles. A conectividade mantém a organização existente.
+
+### Central de controle — fase 2
+
+Módulo único com Wi-Fi, Bluetooth e LocalSend em linhas; Foco e dois tiles de janelas/tela na coluna direita; mídia horizontal e sliders com ícone dentro da pílula. LocalSend é uma ação neutra. Estados ligados usam azul sólido, com ícones brancos, enquanto o vidro e os cartões seguem o grafite. O CSS completo usa seletores restritos à central; o backdrop e a superfície têm raio de 22 px. O rodapé mantém apenas controles, incluindo acesso ao menu nativo e opções de sessão/energia. Mantidos atalhos de botão direito e sincronização com os controles nativos. A mudança da extensão requer novo login.

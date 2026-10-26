@@ -42,43 +42,47 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         const right = new St.BoxLayout({vertical: true, style_class: 'fcc-right'});
         top.add_child(left); top.add_child(right);
 
-        const wifi = this._tile('network-wireless-symbolic', 'Wi-Fi', 'Verificando…', () => this._toggleWifi());
-        left.add_child(wifi.button); this._wifi = wifi;
-        wifi.button.connect('button-press-event', (_actor, event) => {
+        const module = new St.BoxLayout({vertical: true, style_class: 'fcc-connectivity'});
+        left.add_child(module);
+        this._wifi = this._connectionRow('network-wireless-symbolic', 'Wi-Fi', 'Verificando…', () => this._toggleWifi());
+        module.add_child(this._wifi.button);
+        this._wifi.button.connect('button-press-event', (_actor, event) => {
             if (event.get_button() === 3) { this._settings('wifi'); return Clutter.EVENT_STOP; }
             return Clutter.EVENT_PROPAGATE;
         });
-        const radios = new St.BoxLayout({style_class: 'fcc-radios'});
-        left.add_child(radios);
-        this._bluetooth = this._circle('bluetooth-active-symbolic', 'Bluetooth · botão direito para dispositivos', () => this._toggleBluetooth());
-        radios.add_child(this._bluetooth);
-        this._bluetooth.connect('button-press-event', (_actor, event) => {
+        this._bluetooth = this._connectionRow('bluetooth-active-symbolic', 'Bluetooth', 'Desativado', () => this._toggleBluetooth());
+        module.add_child(this._bluetooth.button);
+        this._bluetooth.button.connect('button-press-event', (_actor, event) => {
             if (event.get_button() === 3) { this._settings('bluetooth'); return Clutter.EVENT_STOP; }
             return Clutter.EVENT_PROPAGATE;
         });
-        const send = this._circle('document-send-symbolic', 'Enviar arquivos e textos pelo LocalSend', () => this._launch([GLib.get_home_dir() + '/.local/share/localsend-native/localsend_app']));
-        send.add_style_class_name('fcc-send'); radios.add_child(send);
+        this._send = this._connectionRow('document-send-symbolic', 'LocalSend', 'Enviar arquivos', () => this._launch([GLib.get_home_dir() + '/.local/share/localsend-native/localsend_app']));
+        module.add_child(this._send.button);
         this._focus = this._tile('weather-clear-night-symbolic', 'Foco', '', () => {
-            const value = this._notifySettings.get_boolean('show-banners');
-            this._notifySettings.set_boolean('show-banners', !value); this._sync();
+            this._notifySettings.set_boolean('show-banners', !this._notifySettings.get_boolean('show-banners')); this._sync();
         });
-        this._focus.button.add_style_class_name('fcc-focus'); left.add_child(this._focus.button);
+        this._focus.button.add_style_class_name('fcc-focus');
+        this._focus.button.child.vertical = true;
+        this._focus.button.child.x_align = Clutter.ActorAlign.CENTER;
+        right.add_child(this._focus.button);
+        const views = new St.BoxLayout({style_class: 'fcc-views'}); right.add_child(views);
+        views.add_child(this._smallTile('view-grid-symbolic', 'Janelas', () => { this.menu.close(); Main.overview.toggle(); }));
+        views.add_child(this._smallTile('video-display-symbolic', 'Tela', () => this._settings('display')));
 
-        this._media = new St.BoxLayout({vertical: true, style_class: 'fcc-media'}); right.add_child(this._media);
-        this._cover = new St.Icon({icon_name: 'audio-x-generic-symbolic', icon_size: 32, style_class: 'fcc-cover'});
+        this._media = new St.BoxLayout({style_class: 'fcc-media'});
+        this._cover = new St.Icon({icon_name: 'audio-x-generic-symbolic', icon_size: 36, style_class: 'fcc-cover', y_align: Clutter.ActorAlign.CENTER});
         this._media.add_child(this._cover);
+        const mediaText = new St.BoxLayout({vertical: true, style_class: 'fcc-media-text', x_expand: true, y_align: Clutter.ActorAlign.CENTER});
         this._title = this._label('Sem reprodução', 'fcc-track');
         this._artist = this._label('Abra seu player', 'fcc-artist');
-        this._media.add_child(this._title); this._media.add_child(this._artist);
-        const playback = new St.BoxLayout({style_class: 'fcc-playback', x_align: Clutter.ActorAlign.CENTER});
+        mediaText.add_child(this._title); mediaText.add_child(this._artist); this._media.add_child(mediaText);
+        const playback = new St.BoxLayout({style_class: 'fcc-playback', y_align: Clutter.ActorAlign.CENTER});
         this._media.add_child(playback);
         this._previous = this._mediaButton('media-skip-backward-symbolic', 'Anterior', () => this._player?.previous());
         this._play = this._mediaButton('media-playback-start-symbolic', 'Reproduzir ou pausar', () => this._player?.playPause());
         this._next = this._mediaButton('media-skip-forward-symbolic', 'Próxima', () => this._player?.next());
         for (const child of [this._previous, this._play, this._next]) playback.add_child(child);
-        const views = new St.BoxLayout({style_class: 'fcc-views'}); right.add_child(views);
-        views.add_child(this._circle('view-grid-symbolic', 'Visão geral das janelas', () => { this.menu.close(); Main.overview.toggle(); }));
-        views.add_child(this._circle('video-display-symbolic', 'Configurações de tela', () => this._settings('display')));
+        content.add_child(this._media);
 
         const quick = Main.panel.statusArea.quickSettings;
         content.add_child(this._sliderCard('Brilho', 'display-brightness-symbolic', quick?._brightness?.quickSettingsItems?.[0]));
@@ -184,6 +188,24 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         button.set_child(row); button.connect('clicked', callback);
         return {button, icon, heading, detail};
     }
+    _connectionRow(iconName, title, subtitle, callback) {
+        const row = this._tile(iconName, title, subtitle, callback);
+        row.button.set_style_class_name('fcc-connection-row');
+        const children = row.button.child;
+        children.remove_child(row.icon);
+        const circle = new St.Bin({style_class: 'fcc-connection-icon', child: row.icon, y_align: Clutter.ActorAlign.CENTER});
+        children.insert_child_at_index(circle, 0);
+        row.circle = circle;
+        return row;
+    }
+    _smallTile(iconName, title, callback) {
+        const button = new St.Button({style_class: 'fcc-small-tile', can_focus: true, accessible_name: title, x_expand: true});
+        const box = new St.BoxLayout({vertical: true, x_align: Clutter.ActorAlign.CENTER, y_align: Clutter.ActorAlign.CENTER, style_class: 'fcc-small-content'});
+        box.add_child(new St.Icon({icon_name: iconName, icon_size: 20}));
+        box.add_child(new St.Label({text: title, style_class: 'fcc-small-label'}));
+        button.set_child(box); button.connect('clicked', callback);
+        return button;
+    }
     _circle(iconName, tooltip, callback) {
         const button = new St.Button({style_class: 'fcc-circle', reactive: true, can_focus: true, accessible_name: tooltip});
         button.set_child(new St.Icon({icon_name: iconName, icon_size: 22}));
@@ -202,10 +224,19 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         const heading = new St.BoxLayout({style_class: 'fcc-slider-heading'});
         heading.add_child(new St.Label({text: title, style_class: 'fcc-slider-title', x_expand: true}));
         card.add_child(heading);
-        const row = new St.BoxLayout({style_class: 'fcc-slider-row'});
-        const icon = new St.Icon({icon_name: iconName, icon_size: 16, y_align: Clutter.ActorAlign.CENTER}); row.add_child(icon);
+        const pill = new St.Widget({layout_manager: new Clutter.BinLayout(), style_class: 'fcc-slider-pill', x_expand: true});
         const slider = new Slider.Slider(0); slider.x_expand = true; slider.accessible_name = title;
-        slider.add_style_class_name('fcc-slider'); row.add_child(slider); card.add_child(row);
+        slider.add_style_class_name('fcc-slider'); pill.add_child(slider);
+        const icon = new St.Icon({icon_name: iconName, icon_size: 16, style_class: 'fcc-slider-icon', reactive: false,
+            x_align: Clutter.ActorAlign.START, y_align: Clutter.ActorAlign.CENTER});
+        const overlay = new St.BoxLayout({x_expand: true, y_expand: true, reactive: false});
+        overlay.add_child(icon); pill.add_child(overlay); card.add_child(pill);
+        const syncIcon = () => {
+            // Keep the glyph readable on both the white fill and the dark track.
+            if (slider.value >= 0.13) icon.add_style_class_name('on-fill');
+            else icon.remove_style_class_name('on-fill');
+        };
+        slider.connect('notify::value', syncIcon); syncIcon();
         card._fccSlider = slider;
         const original = source?.slider;
         if (original) {
@@ -246,9 +277,12 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         const wifi = quick?._network?._wirelessToggle;
         this._wifi.detail.text = wifi?.subtitle || (wifi?.checked ? 'Conectado' : 'Desativado');
         this._active(this._wifi.button, Boolean(wifi?.checked));
+        this._wifi.button.accessible_name = `Wi-Fi: ${this._wifi.detail.text}`;
         this._wifi.icon.icon_name = wifi?.icon_name || 'network-wireless-symbolic';
         const bluetooth = quick?._bluetooth?.quickSettingsItems?.[0];
-        this._active(this._bluetooth, Boolean(bluetooth?.checked));
+        this._active(this._bluetooth.button, Boolean(bluetooth?.checked));
+        this._bluetooth.detail.text = bluetooth?.subtitle || (bluetooth?.checked ? 'Ativado' : 'Desativado');
+        this._bluetooth.button.accessible_name = `Bluetooth: ${this._bluetooth.detail.text}`;
         const focus = !this._notifySettings.get_boolean('show-banners');
         this._active(this._focus.button, focus); this._focus.detail.text = focus ? 'Ativado' : 'Desativado';
         this._active(this._appearance, this._colorSettings.get_boolean('night-light-enabled'));
