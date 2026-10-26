@@ -1,4 +1,4 @@
-# Meu Zorin com visual macOS escuro
+# LinuxMacOs — meu Zorin com visual macOS escuro
 
 Kit pessoal para reaplicar o desktop registrado em **25/10/2026**, incluindo
 Liquid Glass escuro, Dock animada, menu da maçã, central de controle própria,
@@ -12,13 +12,12 @@ O instalador recusa outras versões: extensões de GNOME não são universais.
 Instale a mesma versão do Zorin, entre na sessão e execute como seu usuário:
 
 ```bash
-git clone URL-DO-SEU-REPOSITORIO zorin-macos-restore
-cd zorin-macos-restore
+git clone https://github.com/andrefarias11/LinuxMacOs.git
+cd LinuxMacOs
 ./install.sh --check
 ./install.sh --apps --system-look
 ```
 
-Troque `URL-DO-SEU-REPOSITORIO` pela URL real após publicar o repositório.
 Não execute o instalador inteiro com sudo. Ele solicita sudo nas etapas necessárias.
 Depois, **salve seu trabalho, saia da sessão e entre novamente**. Não é feito
 logout ou reinício automático. Reinicie para conferir a tela de inicialização.
@@ -104,8 +103,10 @@ A aplicação dos temas de sistema é opcional e altera o GDM/Plymouth.
 
 ## Guardar no Git
 
-Este diretório já é um repositório Git local. Crie um repositório vazio
-**preferencialmente privado** no serviço que você usa e rode:
+Repositório: https://github.com/andrefarias11/LinuxMacOs
+
+Para publicar uma cópia sua, crie um repositório vazio, preferencialmente privado,
+e configure a URL do seu repositório:
 
 ```bash
 git remote add origin URL-DO-SEU-REPOSITORIO
