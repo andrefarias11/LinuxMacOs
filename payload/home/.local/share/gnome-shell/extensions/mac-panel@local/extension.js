@@ -1,5 +1,6 @@
 import Clutter from 'gi://Clutter';
 import Gio from 'gi://Gio';
+import GLib from 'gi://GLib';
 import Shell from 'gi://Shell';
 import St from 'gi://St';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
@@ -19,7 +20,13 @@ export default class MacPanel extends Extension {
   this._apple.add_child(new St.Icon({gicon:Gio.icon_new_for_string(`${this.path}/assets/apple.svg`),style_class:'mac-panel-apple',icon_size:24}));
   const menu=this._apple.menu;
   menu.actor.add_style_class_name('mac-system-menu');
-  const action=(label,fn)=>menu.addAction(label,()=>{try {fn();} catch(e){console.error(e);Main.notify('Menu do sistema','Não foi possível abrir esta opção.');}});
+  const action=(label,fn)=>menu.addAction(label,()=>{
+   menu.close(0);
+   GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE,()=>{
+    try {fn();} catch(e){console.error(e);Main.notify('Menu do sistema','Não foi possível abrir esta opção.');}
+    return GLib.SOURCE_REMOVE;
+   });
+  });
   action('Sobre este computador',()=>this._launch(['gnome-control-center','info-overview']));
   action('Ajustes do Sistema…',()=>this._launch(['gnome-control-center']));
   menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
@@ -29,6 +36,7 @@ export default class MacPanel extends Extension {
   menu.addMenuItem(new PopupMenu.PopupSeparatorMenuItem());
   action('Monitor do sistema',()=>this._launch(['gnome-system-monitor']));
   action('Bloquear tela',()=>SystemActions.getDefault().activateLockScreen());
+  action('Encerrar sessão…',()=>SystemActions.getDefault().activateLogout());
   action('Suspender',()=>SystemActions.getDefault().activateSuspend());
   action('Reiniciar…',()=>SystemActions.getDefault().activateRestart());
   action('Desligar…',()=>SystemActions.getDefault().activatePowerOff());

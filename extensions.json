@@ -20,5 +20,6 @@
   "rounded-window-corners@fxgn",
   "mac-panel@local",
   "mac-lock-style@local",
-  "user-theme@gnome-shell-extensions.gcampax.github.com"
+  "user-theme@gnome-shell-extensions.gcampax.github.com",
+  "mac-refinements@local"
 ]

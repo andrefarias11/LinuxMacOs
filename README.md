@@ -120,3 +120,12 @@ mantêm suas próprias licenças; este repositório não é um produto da Apple.
 
 Mantenha também um backup separado dos seus arquivos de trabalho. Atualizações
 futuras do sistema/navegador podem exigir adaptar o kit antes de restaurar.
+
+### Refinamentos de 26/10/2026
+
+- Paleta grafite unificada no terminal, prompt Zsh, cores dos arquivos, Rofi e interface/terminal do VS Code. A referência fica em `~/.config/grafite/palette.json`; editar esse JSON isoladamente não reaplica as cores nos aplicativos.
+- Barra de 26 px e relógio em português no formato `seg 26 out 15:03`, pela extensão Mac Refinements para GNOME 46.
+- Opção **Encerrar sessão…** na central de controle e no menu da maçã, com ações executadas após fechar o menu.
+- Terminal com 12% de transparência e blur restrito a `Gnome-terminal`; borda branca discreta de 1 px e sombras suaves nas janelas compatíveis.
+
+As novas extensões carregam após sair e entrar na sessão. `bat`, `fzf`, `lazygit` e `starship` não são instalados por esses refinamentos. Configurações de Wi-Fi, DNS e VPN não fazem parte deste kit.

@@ -17,7 +17,7 @@ configuration {
 }
 * {
     background-color: transparent;
-    text-color: #ededf2;
+    text-color: #f5f5f7;
     border-color: #42434c;
     spacing: 0;
 }
@@ -39,8 +39,8 @@ inputbar {
     border: 0 0 1px;
     border-color: #ffffff12;
 }
-prompt { font: "Inter 14"; text-color: #9195a2; }
-entry { text-color: #f5f5f7; cursor-color: #79b8ff; font: "Inter 20"; placeholder: "Pesquisar…"; placeholder-color: #7d8290; }
+prompt { font: "Inter 14"; text-color: #a4a7b4; }
+entry { text-color: #f5f5f7; cursor-color: #79b8ff; font: "Inter 20"; placeholder: "Pesquisar…"; placeholder-color: #a4a7b4; }
 listview { lines: 5; columns: 1; fixed-height: false; padding: 10px 0; spacing: 4px; scrollbar: false; }
 element { padding: 10px 13px; border-radius: 11px; spacing: 13px; }
 element normal.normal { background-color: transparent; }
@@ -48,7 +48,7 @@ element selected.normal { background-color: #0a84ff; text-color: #ffffff; }
 element-icon { size: 27px; }
 element-text { vertical-align: 0.5; }
 mode-switcher { spacing: 7px; padding: 9px 0 0; border: 1px 0 0; border-color: #ffffff12; }
-button { padding: 8px 10px; border-radius: 9px; text-color: #989da9; font: "Inter 10"; }
+button { padding: 8px 10px; border-radius: 9px; text-color: #a4a7b4; font: "Inter 10"; }
 button selected { background-color: #ffffff12; text-color: #f5f5f7; }
 
 textbox-keyboard-hint { padding: 10px 10px 2px; font: "Inter 9"; text-color: #a4a7b4; content: "↵ Abrir     Esc Fechar     Ctrl+Tab Alternar categoria"; }

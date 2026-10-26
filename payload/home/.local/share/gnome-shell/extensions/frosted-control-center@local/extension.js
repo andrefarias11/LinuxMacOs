@@ -105,17 +105,26 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         }));
         footer.add_child(lock);
         this._powerOptions = new St.BoxLayout({vertical: true, style_class: 'fcc-power-options', visible: false});
-        footer.add_child(this._mediaButton('system-shutdown-symbolic', 'Energia: suspender, reiniciar ou desligar', () => {
+        footer.add_child(this._mediaButton('system-shutdown-symbolic', 'Sessão e energia: encerrar sessão, suspender, reiniciar ou desligar', () => {
             this._powerOptions.visible = !this._powerOptions.visible;
         }));
         content.add_child(this._powerOptions);
         for (const [label, action] of [
+            ['Encerrar sessão…', () => SystemActions.getDefault().activateLogout()],
             ['Suspender', () => SystemActions.getDefault().activateSuspend()],
             ['Reiniciar…', () => SystemActions.getDefault().activateRestart()],
             ['Desligar…', () => SystemActions.getDefault().activatePowerOff()],
         ]) {
             const button = new St.Button({label, style_class: 'fcc-power-option', can_focus: true, x_expand: true});
-            button.connect('clicked', () => { this.menu.close(); this._powerOptions.hide(); action(); });
+            button.connect('clicked', () => {
+                this.menu.close(PopupAnimation.NONE);
+                this._powerOptions.hide();
+                GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
+                    try { action(); }
+                    catch (error) { console.error(error); Main.notify('Sessão e energia', 'Não foi possível executar a ação. Verifique se o sistema está respondendo.'); }
+                    return GLib.SOURCE_REMOVE;
+                });
+            });
             this._powerOptions.add_child(button);
         }
         this._connect(this._colorSettings, 'changed::night-light-enabled', () => this._sync());
