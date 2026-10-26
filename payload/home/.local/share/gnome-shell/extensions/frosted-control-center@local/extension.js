@@ -25,6 +25,8 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         this._colorSettings = new Gio.Settings({schema_id: 'org.gnome.settings-daemon.plugins.color'});
         this.add_child(new St.Icon({gicon: Gio.icon_new_for_string(iconPath), style_class: 'system-status-icon'}));
         this.menu.box.add_style_class_name('fcc-popup');
+        this.menu.box.name = 'fcc-popup-content';
+        this.menu.actor.add_style_class_name('fcc-popup-frame');
         const item = new PopupMenu.PopupBaseMenuItem({reactive: false, can_focus: false, style_class: 'fcc-wrapper'});
         const shell = new St.Widget({name: 'fcc-graphite', layout_manager: new Clutter.BinLayout(), style_class: 'fcc-shell', x_expand: true});
         const glass = new St.Widget({style_class: 'fcc-glass', x_expand: true, y_expand: true});
@@ -34,7 +36,8 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         shell.add_child(glass);
         const content = new St.BoxLayout({vertical: true, style_class: 'fcc-content', x_expand: true});
         shell.add_child(content);
-        item.add_child(shell);
+        const outer = new St.BoxLayout({vertical: true, style_class: 'fcc-layout'});
+        outer.add_child(shell); item.add_child(outer);
         this.menu.addMenuItem(item);
         const top = new St.BoxLayout({style_class: 'fcc-top'});
         content.add_child(top);
@@ -58,36 +61,45 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         });
         this._send = this._connectionRow('document-send-symbolic', 'LocalSend', 'Enviar arquivos', () => this._launch([GLib.get_home_dir() + '/.local/share/localsend-native/localsend_app']));
         module.add_child(this._send.button);
+        this._send.circle.add_style_class_name('fcc-send-brand');
+        const sendIcon = Gio.File.new_for_path(GLib.get_home_dir() + '/.local/share/localsend-native/data/flutter_assets/assets/img/logo-128.png');
+        if (sendIcon.query_exists(null)) this._send.icon.gicon = Gio.icon_new_for_string(sendIcon.get_path());
         this._focus = this._tile('weather-clear-night-symbolic', 'Foco', '', () => {
             this._notifySettings.set_boolean('show-banners', !this._notifySettings.get_boolean('show-banners')); this._sync();
         });
         this._focus.button.add_style_class_name('fcc-focus');
-        this._focus.button.child.vertical = true;
-        this._focus.button.child.x_align = Clutter.ActorAlign.CENTER;
+        this._focus.button.child.vertical = false;
+        this._focus.button.child.x_align = Clutter.ActorAlign.START;
         right.add_child(this._focus.button);
         const views = new St.BoxLayout({style_class: 'fcc-views'}); right.add_child(views);
-        views.add_child(this._smallTile('view-grid-symbolic', 'Janelas', () => { this.menu.close(); Main.overview.toggle(); }));
+        views.add_child(this._smallTile('window-new-symbolic', 'Janelas', () => { this.menu.close(); Main.overview.toggle(); }));
         views.add_child(this._smallTile('video-display-symbolic', 'Tela', () => this._settings('display')));
 
-        this._media = new St.BoxLayout({style_class: 'fcc-media'});
+        this._media = new St.BoxLayout({vertical: true, style_class: 'fcc-media'});
+        const mediaHeader = new St.BoxLayout({style_class: 'fcc-media-header'});
+        this._media.add_child(mediaHeader);
         this._cover = new St.Icon({icon_name: 'audio-x-generic-symbolic', icon_size: 36, style_class: 'fcc-cover', y_align: Clutter.ActorAlign.CENTER});
-        this._media.add_child(this._cover);
+        const coverTile = new St.Bin({style_class: 'fcc-cover-tile', child: this._cover});
+        mediaHeader.add_child(coverTile);
         const mediaText = new St.BoxLayout({vertical: true, style_class: 'fcc-media-text', x_expand: true, y_align: Clutter.ActorAlign.CENTER});
         this._title = this._label('Sem reprodução', 'fcc-track');
         this._artist = this._label('Abra seu player', 'fcc-artist');
-        mediaText.add_child(this._title); mediaText.add_child(this._artist); this._media.add_child(mediaText);
-        const playback = new St.BoxLayout({style_class: 'fcc-playback', y_align: Clutter.ActorAlign.CENTER});
+        mediaText.add_child(this._title); mediaText.add_child(this._artist); mediaHeader.add_child(mediaText);
+        const playback = new St.BoxLayout({style_class: 'fcc-playback', x_align: Clutter.ActorAlign.CENTER});
         this._media.add_child(playback);
         this._previous = this._mediaButton('media-skip-backward-symbolic', 'Anterior', () => this._player?.previous());
         this._play = this._mediaButton('media-playback-start-symbolic', 'Reproduzir ou pausar', () => this._player?.playPause());
         this._next = this._mediaButton('media-skip-forward-symbolic', 'Próxima', () => this._player?.next());
         for (const child of [this._previous, this._play, this._next]) playback.add_child(child);
+        this._play.add_style_class_name('fcc-play-main');
         content.add_child(this._media);
 
         const quick = Main.panel.statusArea.quickSettings;
-        content.add_child(this._sliderCard('Brilho', 'display-brightness-symbolic', quick?._brightness?.quickSettingsItems?.[0]));
-        content.add_child(this._sliderCard('Som', 'audio-volume-high-symbolic', quick?._volumeOutput?._output));
-        const shortcuts = new St.BoxLayout({style_class: 'fcc-shortcuts'}); content.add_child(shortcuts);
+        const sliders = new St.BoxLayout({vertical: true, style_class: 'fcc-sliders-module'});
+        content.add_child(sliders);
+        sliders.add_child(this._sliderCard('Brilho', 'display-brightness-symbolic', quick?._brightness?.quickSettingsItems?.[0]));
+        sliders.add_child(this._sliderCard('Som', 'audio-volume-high-symbolic', quick?._volumeOutput?._output));
+        const shortcuts = new St.BoxLayout({style_class: 'fcc-shortcuts'}); sliders.add_child(shortcuts);
         this._appearance = this._circle('night-light-symbolic', 'Luz noturna · botão direito para ajustar o horário', () => {
             const enabled = this._colorSettings.get_boolean('night-light-enabled');
             this._colorSettings.set_boolean('night-light-enabled', !enabled);
@@ -101,17 +113,19 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         shortcuts.add_child(this._circle('accessories-calculator-symbolic', 'Calculadora', () => this._launch(['gnome-calculator'])));
         shortcuts.add_child(this._circle('camera-photo-symbolic', 'Captura de tela', () => { this.menu.close(); Main.screenshotUI.open(); }));
         shortcuts.add_child(this._circle('emblem-system-symbolic', 'Configurações do sistema', () => this._launch(['gnome-control-center'])));
-        const footer = new St.BoxLayout({style_class: 'fcc-footer', x_align: Clutter.ActorAlign.END}); content.add_child(footer);
+        const footer = new St.BoxLayout({name: 'fcc-footer', style_class: 'fcc-footer'}); outer.add_child(footer);
+        footer.add_child(new St.Widget({x_expand: true}));
         const lock = this._mediaButton('system-lock-screen-symbolic', 'Bloquear tela', () => { this.menu.close(); Main.screenShield.lock(true); });
-        footer.add_child(this._mediaButton('view-more-symbolic', 'Abrir os controles nativos do GNOME', () => {
+        footer.add_child(this._mediaButton('view-more-horizontal-symbolic', 'Abrir os controles nativos do GNOME', () => {
             this.menu.close(); this._openNative?.();
         }));
         footer.add_child(lock);
-        this._powerOptions = new St.BoxLayout({vertical: true, style_class: 'fcc-power-options', visible: false});
+        this._powerOptions = new St.BoxLayout({name: 'fcc-power-menu', vertical: true, style_class: 'fcc-power-options', visible: false});
         footer.add_child(this._mediaButton('system-shutdown-symbolic', 'Sessão e energia: encerrar sessão, suspender, reiniciar ou desligar', () => {
             this._powerOptions.visible = !this._powerOptions.visible;
+            shell.visible = !this._powerOptions.visible;
         }));
-        content.add_child(this._powerOptions);
+        outer.insert_child_at_index(this._powerOptions, 1);
         for (const [label, action] of [
             ['Encerrar sessão…', () => SystemActions.getDefault().activateLogout()],
             ['Suspender', () => SystemActions.getDefault().activateSuspend()],
@@ -121,7 +135,7 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
             const button = new St.Button({label, style_class: 'fcc-power-option', can_focus: true, x_expand: true});
             button.connect('clicked', () => {
                 this.menu.close(PopupAnimation.NONE);
-                this._powerOptions.hide();
+                this._powerOptions.hide(); shell.show();
                 GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
                     try { action(); }
                     catch (error) { console.error(error); Main.notify('Sessão e energia', 'Não foi possível executar a ação. Verifique se o sistema está respondendo.'); }
@@ -162,7 +176,7 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
             this._blurEffects = new EffectsManager(this._blurConnections);
             this._blurPipelines = new PipelinesManager(this._blurSettings);
             this._backdrop = new DynamicPipeline(this._blurEffects, this._blurPipelines,
-                'pipeline_default', {corner_radius: 22});
+                'pipeline_default', {corner_radius: 26});
             this._backdrop.attach_to_container(this._shell, 'fcc-frosted-backdrop').opacity = 180;
             this._glass.remove_effect(this._blur);
         } catch (error) {
@@ -226,14 +240,16 @@ const Center = GObject.registerClass(class Center extends PanelMenu.Button {
         card.add_child(heading);
         const pill = new St.Widget({layout_manager: new Clutter.BinLayout(), style_class: 'fcc-slider-pill', x_expand: true});
         const slider = new Slider.Slider(0); slider.x_expand = true; slider.accessible_name = title;
-        slider.add_style_class_name('fcc-slider'); pill.add_child(slider);
+        slider.add_style_class_name('fcc-slider');
+        if (title === 'Som') { slider.add_style_class_name('fcc-slider-volume'); card.add_style_class_name('fcc-volume-card'); }
+        pill.add_child(slider);
         const icon = new St.Icon({icon_name: iconName, icon_size: 16, style_class: 'fcc-slider-icon', reactive: false,
             x_align: Clutter.ActorAlign.START, y_align: Clutter.ActorAlign.CENTER});
         const overlay = new St.BoxLayout({x_expand: true, y_expand: true, reactive: false});
         overlay.add_child(icon); pill.add_child(overlay); card.add_child(pill);
         const syncIcon = () => {
             // Keep the glyph readable on both the white fill and the dark track.
-            if (slider.value >= 0.13) icon.add_style_class_name('on-fill');
+            if (title !== 'Som' && slider.value >= 0.13) icon.add_style_class_name('on-fill');
             else icon.remove_style_class_name('on-fill');
         };
         slider.connect('notify::value', syncIcon); syncIcon();

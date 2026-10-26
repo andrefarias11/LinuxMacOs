@@ -146,3 +146,7 @@ Estados ligados usam azul sólido e ícones brancos; LocalSend permanece uma aç
 ### Central de controle — fase 2
 
 Módulo único com Wi-Fi, Bluetooth e LocalSend em linhas; Foco e dois tiles de janelas/tela na coluna direita; mídia horizontal e sliders com ícone dentro da pílula. LocalSend é uma ação neutra. Estados ligados usam azul sólido, com ícones brancos, enquanto o vidro e os cartões seguem o grafite. O CSS completo usa seletores restritos à central; o backdrop e a superfície têm raio de 22 px. O rodapé mantém apenas controles, incluindo acesso ao menu nativo e opções de sessão/energia. Mantidos atalhos de botão direito e sincronização com os controles nativos. A mudança da extensão requer novo login.
+
+### Central baseada no protótipo de vidro
+
+Layout adaptado à tela de 1366×768: colunas equilibradas, Foco horizontal, módulo de mídia com capa/título e controles abaixo, sliders agrupados com volume azul e rodapé separado. Superfície principal e backdrop usam raio de 26 px. As camadas nativas do popup ficam transparentes para o vidro mostrar as cores do wallpaper existente. A cor percebida depende do papel de parede; ele não é substituído. LocalSend usa seu ícone oficial quando o pacote nativo está presente. O menu de energia troca a vista principal em vez de aumentar a altura e cortar opções na tela. A atualização requer novo login.
