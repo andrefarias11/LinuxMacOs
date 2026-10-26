@@ -53,7 +53,8 @@ Isso detecta corrupção, não substitui a confiança no autor de um repositóri
 ## Aplicativos e diferenças
 
 Os aplicativos do GNOME e utilitários vêm dos repositórios do sistema. Notes,
-VS Code, DBeaver e Chrome são instalados do Flathub. LocalSend usa o pacote
+VS Code, DBeaver, Chrome e Deskflow são instalados do Flathub. Em sessões X11,
+o Deskflow recebe uma permissão de tela específica para evitar falha ao abrir. LocalSend usa o pacote
 nativo oficial, evitando o problema de travamento observado antes com Flatpak. **VS Code,
 DBeaver e Chrome em Flatpak podem ter permissões e acesso a ferramentas diferentes
 das instalações nativas anteriores.** Seus projetos e configurações de contas

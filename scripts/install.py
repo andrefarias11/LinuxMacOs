@@ -112,7 +112,9 @@ def apps_install():
  run(['sudo','apt-get','update'])
  run(['sudo','apt-get','install','-y','python3-gi','rofi','zsh','git','curl','flatpak','gnome-shell-extensions','gnome-terminal','gnome-text-editor','gnome-calendar','gnome-contacts','gnome-weather','evolution','eog','vlc','gnome-software','gnome-system-monitor','gnome-tweaks','gir1.2-dbusmenu-glib-0.4'])
  run(['flatpak','remote-add','--user','--if-not-exists','flathub','https://dl.flathub.org/repo/flathub.flatpakrepo'])
- run(['flatpak','install','--user','-y','flathub','io.github.nuttyartist.notes','com.visualstudio.code','io.dbeaver.DBeaverCommunity','com.google.Chrome'])
+ run(['flatpak','install','--user','-y','flathub','io.github.nuttyartist.notes','com.visualstudio.code','io.dbeaver.DBeaverCommunity','com.google.Chrome','org.deskflow.deskflow'])
+ if os.environ.get('XDG_SESSION_TYPE')=='x11':
+  run(['flatpak','override','--user','--socket=x11','--nosocket=wayland','--env=QT_QPA_PLATFORM=xcb','org.deskflow.deskflow'])
  print('Apps de trabalho usam Flatpak. Não importam projetos, bancos ou contas.')
 def firefox_install(home):
  import urllib.request
